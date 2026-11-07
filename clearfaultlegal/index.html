@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearFault Legal | 3D Forensic Reconstruction, Legal Triage & Affiliate Hub</title>
+  <meta name="description" content="ClearFault Legal: Trial-admissible 3D forensic accident reconstruction, LiDAR spatial capture, Bosch CDR telemetry analysis, personal injury lead triage, pre-settlement lawsuit funding comparisons, and legal tech templates.">
+  <meta name="keywords" content="3D forensic animation, accident reconstruction, Bosch CDR black-box, FARO LiDAR point cloud, Fresno personal injury expert, FRE 107, FRE 702 Daubert, legal lead triage, pre-settlement funding, Clio legal software, slide guide">
+  <link rel="canonical" href="https://clearfaultlegal.com/">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clearfaultlegal.com/">
+  <meta property="og:title" content="ClearFault Legal | 3D Forensic Reconstruction & Legal Triage Hub">
+  <meta property="og:description" content="Judges Don't Admit Movie Trailers. They Admit Physics. Trial-admissible 3D forensic reconstruction, LiDAR spatial capture, and 4-pillar legal marketplace.">
+  <meta property="og:site_name" content="ClearFault Legal">
+  
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Three.js & OrbitControls from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0a0a0a',
+              dark: '#121214',
+              surface: '#18181c',
+              border: '#26262e',
+              orange: '#ff6600',
+              orangeHover: '#ff5500',
+              cyan: '#00e5ff',
+              gold: '#f59e0b',
+              gray: '#94a3b8'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+    .hud-glow-orange {
+      box-shadow: 0 0 25px rgba(255, 102, 0, 0.25);
+    }
+    .hud-glow-cyan {
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+    }
+    .tech-grid {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 102, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 102, 0, 0.05) 1px, transparent 1px);
+    }
+    .scanline {
+      background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0, 229, 255, 0.04) 50%, rgba(0, 229, 255, 0.04));
+      background-size: 100% 4px;
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "ClearFault Legal",
+    "url": "https://clearfaultlegal.com",
+    "logo": "https://clearfaultlegal.com/assets/logo.png",
+    "image": "https://clearfaultlegal.com/assets/og-cover.jpg",
+    "description": "Trial-admissible 3D forensic accident reconstruction, FARO LiDAR reality capture, Bosch CDR black-box telemetry extraction, attorney referral triage, and pre-settlement funding comparison authority.",
+    "telephone": "(555) 019-9000",
+    "email": "contact@clearfaultlegal.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fresno",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.7468,
+      "longitude": -119.7726
+    },
+    "areaServed": ["Fresno", "Central Valley", "California", "Nationwide (Federal Practice)"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Forensic & Legal Tech Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "3D Forensic Collision Simulation & LiDAR Modeling",
+            "description": "Daubert-tested 3D accident reconstruction under FRE 702 and illustrative demonstrative aids under FRE 107."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bosch CDR Event Data Recorder (Black Box) Extraction",
+            "description": "Cryptographically verified Airbag Control Module (ACM) telemetry extraction and pre-crash pulse analysis."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Attorney Referral & Catastrophic Injury Triage",
+            "description": "24/7 case triage connecting plaintiffs and co-counsel across commercial trucking, rideshare, and probate litigation."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="bg-brand-black text-white selection:bg-brand-orange selection:text-white">
+
+  <!-- TOP DISPATCH HUD BAR -->
+  <div class="bg-brand-dark/95 border-b border-brand-border text-xs py-2 px-4 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3 font-mono text-gray-400">
+        <span class="flex items-center gap-1.5 text-brand-cyan">
+          <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+          FARO LiDAR 48.2M PTS
+        </span>
+        <span class="hidden sm:inline text-brand-border">|</span>
+        <span class="hidden sm:inline text-gray-400">BOSCH CDR EDR: HASH-VERIFIED</span>
+        <span class="hidden md:inline text-brand-border">|</span>
+        <span class="hidden md:inline text-emerald-400">STATUS: REBUILT &amp; SYNCHRONIZED</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-mono">
+        <a href="tel:5550199000" class="text-white hover:text-brand-orange flex items-center gap-1.5 font-bold transition">
+          <svg class="w-3.5 h-3.5 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/>
+          </svg>
+          24/7 DISPATCH: (555) 019-9000
+        </a>
+        <a href="mailto:contact@clearfaultlegal.com" class="text-brand-gray hover:text-white transition hidden sm:inline">
+          contact@clearfaultlegal.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="border-b border-brand-border/60 bg-brand-black/90 backdrop-blur-md sticky top-8 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-orange to-brand-orangeHover flex items-center justify-center font-mono font-black text-white text-xl shadow-lg shadow-brand-orange/20">
+          CF
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-white block leading-none">
+            CLEAR<span class="text-brand-orange">FAULT</span>
+          </span>
+          <span class="text-[10px] font-mono tracking-widest text-brand-gray uppercase">
+            FORENSIC LEGAL TECH &amp; TRIAGE
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="#forensic-viewport" class="hover:text-brand-orange transition flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-cyan"></span>
+          3D Viewport
+        </a>
+        <a href="#pillar-triage" class="hover:text-brand-orange transition">Case Triage</a>
+        <a href="#pillar-affiliates" class="hover:text-brand-orange transition">Affiliate Matrix</a>
+        <a href="#pillar-store" class="hover:text-brand-orange transition">Evidence Store</a>
+        <a href="probate-equity-dossier.html" class="hover:text-brand-orange transition flex items-center gap-1">
+          Probate Dossier
+          <span class="text-[9px] px-1.5 py-0.5 rounded bg-brand-orange/20 text-brand-orange font-mono">NEW</span>
+        </a>
+        <a href="solo-attorney-slide-guide.html" class="hover:text-brand-orange transition">Slide Guide</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="#case-review-modal" onclick="openCaseModal()" class="px-5 py-2.5 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white font-semibold text-xs tracking-wider uppercase transition shadow-lg shadow-brand-orange/25 flex items-center gap-2">
+          <span>Case Review</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 overflow-hidden tech-grid border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Badges -->
+      <div class="flex flex-wrap items-center gap-3 mb-6">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-brand-orange/10 border border-brand-orange/30 text-brand-orange">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-orange animate-ping"></span>
+          DAUBERT &amp; FRE 702 SCIENTIFIC SIMULATION
+        </span>
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-mono text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/30">
+          FRE 107 ILLUSTRATIVE AID COMPLIANT
+        </span>
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-mono text-gray-300 bg-brand-surface border border-brand-border">
+          FRESNO &bull; CALIFORNIA &bull; NATIONWIDE
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <div class="max-w-4xl">
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-6">
+          Judges Don't Admit <span class="text-gray-400 line-through decoration-brand-orange decoration-4">Movie Trailers</span>.<br>
+          They Admit <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-orange-400 to-amber-300">Physics</span>.
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mb-8">
+          ClearFault Legal provides trial-admissible 3D forensic accident reconstructions, FARO LiDAR point-cloud scans, and cryptographically verified Bosch CDR black-box telemetry for personal injury litigators, commercial trucking defense, and probate estate litigation.
+        </p>
+
+        <!-- CTA Cluster -->
+        <div class="flex flex-wrap items-center gap-4 mb-12">
+          <a href="#case-review-modal" onclick="openCaseModal()" class="px-7 py-3.5 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-sm tracking-wider uppercase transition shadow-xl shadow-brand-orange/30 flex items-center gap-2">
+            <span>Submit Case For Evidentiary Audit</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#pillar-affiliates" class="px-6 py-3.5 rounded-lg bg-brand-surface hover:bg-brand-border text-gray-200 font-semibold text-sm transition border border-brand-border flex items-center gap-2">
+            <span>Explore 4-Pillar Hub</span>
+            <span class="text-xs font-mono text-brand-orange">&darr;</span>
+          </a>
+          <a href="tel:5550199000" class="px-5 py-3.5 rounded-lg border border-brand-orange/40 text-brand-orange hover:bg-brand-orange/10 font-mono text-xs tracking-wider transition">
+            TEL: (555) 019-9000
+          </a>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE THREE.JS 3D FORENSIC VIEWPORT -->
+      <div id="forensic-viewport" class="mt-4 rounded-2xl bg-brand-dark border border-brand-border p-4 shadow-2xl relative overflow-hidden">
+        
+        <!-- Viewport Top Control Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-brand-border mb-3 font-mono text-xs">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-orange animate-pulse"></span>
+            <span class="font-bold text-white uppercase tracking-wider">3D WEBGL FORENSIC VIEWPORT</span>
+            <span class="text-brand-gray hidden sm:inline">&bull; 48.2M Spatial Points &bull; SAE J1939 Can-Bus</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="cam-reset" class="px-2.5 py-1 rounded bg-brand-surface border border-brand-border hover:border-brand-orange text-gray-300 hover:text-white transition">Reset Camera</button>
+            <button id="wireframe-toggle" class="px-2.5 py-1 rounded bg-brand-surface border border-brand-border hover:border-brand-cyan text-gray-300 hover:text-white transition">Toggle X-Ray</button>
+            <button id="anim-toggle" class="px-3 py-1 rounded bg-brand-orange hover:bg-brand-orangeHover text-white font-bold transition">Pause Sim</button>
+          </div>
+        </div>
+
+        <!-- Canvas Container -->
+        <div class="relative w-full h-[460px] sm:h-[540px] rounded-xl overflow-hidden bg-brand-black border border-brand-border/60">
+          <div id="three-container" class="w-full h-full cursor-grab active:cursor-grabbing"></div>
+
+          <!-- On-Canvas Telemetry HUD Overlay -->
+          <div class="absolute top-4 left-4 p-3.5 rounded-lg bg-brand-black/85 backdrop-blur-md border border-brand-border font-mono text-xs max-w-xs pointer-events-none shadow-xl">
+            <div class="text-[10px] text-brand-orange uppercase tracking-widest font-bold mb-1.5">BOSCH CDR TELEMETRY HUD</div>
+            <div class="space-y-1 text-gray-300">
+              <div class="flex justify-between gap-4">
+                <span class="text-gray-400">Time to Impact:</span>
+                <span id="hud-time" class="text-brand-cyan font-bold">-2.5s</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-gray-400">Truck Speed:</span>
+                <span id="hud-speed" class="text-white font-bold">59.4 MPH</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-gray-400">Throttle Valve:</span>
+                <span id="hud-throttle" class="text-brand-orange font-bold">88%</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-gray-400">Brake Switch:</span>
+                <span id="hud-brake" class="text-red-400 font-bold">OFF</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-gray-400">Delta-V Pulse:</span>
+                <span id="hud-deltav" class="text-amber-300 font-bold">28.4 MPH (14.2G)</span>
+              </div>
+              <div class="flex justify-between gap-4 border-t border-brand-border pt-1 mt-1 text-[10px]">
+                <span class="text-gray-400">SHA-256 Hash:</span>
+                <span class="text-emerald-400 font-mono">e3b0c442...98fc</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Viewport Instructions Overlay -->
+          <div class="absolute bottom-4 right-4 p-2.5 rounded bg-brand-black/75 backdrop-blur-sm border border-brand-border/50 font-mono text-[11px] text-gray-400 pointer-events-none hidden sm:block">
+            <span class="text-white font-bold">&bull; Orbit:</span> Click &amp; Drag &nbsp;|&nbsp; 
+            <span class="text-white font-bold">&bull; Zoom:</span> Scroll &nbsp;|&nbsp; 
+            <span class="text-white font-bold">&bull; Pan:</span> Right-Click
+          </div>
+        </div>
+
+        <!-- Telemetry Scrubber Bar -->
+        <div class="mt-4 pt-3 border-t border-brand-border flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+          <div class="flex items-center gap-3 w-full sm:w-auto">
+            <span class="text-brand-gray">TIMECODE:</span>
+            <input type="range" id="time-scrubber" min="-50" max="0" value="-25" step="1" class="w-48 sm:w-64 accent-brand-orange cursor-pointer">
+            <span id="scrubber-val" class="font-bold text-brand-orange">-2.5s</span>
+          </div>
+          <div class="flex items-center gap-2 text-[11px] text-gray-400">
+            <span>&bull; Camera matched to PhotoModeler coordinates</span>
+            <span>&bull; Strict Daubert / FRE 702 Admissibility</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4-PILLAR ARCHITECTURE OVERVIEW -->
+  <section class="py-16 bg-brand-dark/50 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-brand-orange mb-3">INTEGRATED ECOSYSTEM</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          The 4 Pillars of ClearFault Legal
+        </h3>
+        <p class="text-gray-400 mt-3 text-sm sm:text-base">
+          Engineered for trial litigators, injured plaintiffs, and estate heirs seeking immediate evidentiary leverage, funding, and statutory protections.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pillar 1 Card -->
+        <div class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-orange transition group">
+          <div class="w-12 h-12 rounded-lg bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange font-mono font-bold text-lg mb-5 group-hover:scale-110 transition">
+            01
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Attorney Referral &amp; Lead Triage</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            Direct case dispatch for 18-wheeler collisions, rideshare catastrophic injuries, probate equity claims, and mass torts.
+          </p>
+          <a href="#pillar-triage" class="text-xs font-mono text-brand-orange hover:text-white flex items-center gap-1">
+            Explore Triage &rarr;
+          </a>
+        </div>
+
+        <!-- Pillar 2 Card -->
+        <div class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-cyan transition group">
+          <div class="w-12 h-12 rounded-lg bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan font-mono font-bold text-lg mb-5 group-hover:scale-110 transition">
+            02
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Affiliate Comparison Matrix</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            Independent evaluations for Pre-Settlement Lawsuit Funding (Oasis, JG Wentworth), Legal Practice SaaS (Clio), and Document Filings.
+          </p>
+          <a href="#pillar-affiliates" class="text-xs font-mono text-brand-cyan hover:text-white flex items-center gap-1">
+            View Matrix &rarr;
+          </a>
+        </div>
+
+        <!-- Pillar 3 Card -->
+        <div class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-amber-400 transition group">
+          <div class="w-12 h-12 rounded-lg bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400 font-mono font-bold text-lg mb-5 group-hover:scale-110 transition">
+            03
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Evidence Store &amp; Slide Guides</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            Dual-4K GPS Telematics Dashcams, Process Server Bodycams, Laser Crash Kits, and Jury Persuasion Slide Decks.
+          </p>
+          <a href="#pillar-store" class="text-xs font-mono text-amber-400 hover:text-white flex items-center gap-1">
+            Browse Store &rarr;
+          </a>
+        </div>
+
+        <!-- Pillar 4 Card -->
+        <div class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-emerald-400 transition group">
+          <div class="w-12 h-12 rounded-lg bg-emerald-400/10 border border-emerald-400/20 flex items-center justify-center text-emerald-400 font-mono font-bold text-lg mb-5 group-hover:scale-110 transition">
+            04
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Investigative Statutory Dossiers</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            California Probate Code equity preservation analyses, partition action defenses, and Daubert/FRE 107 evidentiary briefs.
+          </p>
+          <a href="probate-equity-dossier.html" class="text-xs font-mono text-emerald-400 hover:text-white flex items-center gap-1">
+            Read Dossier &rarr;
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLAR 01: ATTORNEY REFERRAL & LEAD TRIAGE -->
+  <section id="pillar-triage" class="py-20 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6">
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-orange mb-2 block">PILLAR 01: TRIAGE &amp; CO-COUNSEL</span>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+            Catastrophic Injury, Commercial Trucking &amp; Probate Case Routing
+          </h3>
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+            When millions are on the line, insurance defense adjusters stall, and black-box data risks overwriting within days. ClearFault Legal triages high-stakes matters directly to trial partners with immediate forensic deployment.
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div class="p-4 rounded-lg bg-brand-dark border border-brand-border flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">&check;</div>
+              <div>
+                <h5 class="text-sm font-bold text-white">Commercial 18-Wheeler &amp; Heavy Vehicle Crashes</h5>
+                <p class="text-xs text-gray-400 mt-0.5">Rapid spoliation preservation letters, ECM engine download, driver logs (ELD), and brake-force modeling.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-lg bg-brand-dark border border-brand-border flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">&check;</div>
+              <div>
+                <h5 class="text-sm font-bold text-white">Autonomous &amp; Rideshare Collisions (Uber/Lyft/Waymo)</h5>
+                <p class="text-xs text-gray-400 mt-0.5">Sensor fusion telemetry, driver app status matching, telematics scrubber, and multi-tier liability analysis.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-lg bg-brand-dark border border-brand-border flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-brand-orange/20 text-brand-orange flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">&check;</div>
+              <div>
+                <h5 class="text-sm font-bold text-white">California Probate Real Estate &amp; Equity Disputes</h5>
+                <p class="text-xs text-gray-400 mt-0.5">Probate Code § 850 petitions, elder financial abuse recovery, partition litigation, and forced sale injunctions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 text-xs font-mono text-gray-400">
+            <span>Direct Intake Hotline:</span>
+            <a href="tel:5550199000" class="text-brand-orange font-bold text-sm hover:underline">(555) 019-9000</a>
+          </div>
+        </div>
+
+        <!-- Case Triage Form -->
+        <div class="lg:col-span-6">
+          <div class="p-8 rounded-2xl bg-brand-dark border border-brand-border shadow-2xl relative">
+            <div class="absolute -top-3 right-6 px-3 py-1 rounded bg-brand-orange text-white font-mono text-[10px] font-bold uppercase tracking-wider">
+              PRIORITY DISPATCH
+            </div>
+            
+            <h4 class="text-xl font-bold text-white mb-2">Submit Case For Immediate Evidentiary Audit</h4>
+            <p class="text-xs text-gray-400 mb-6">
+              Case files and inquiries are routed directly to our 24/7 lead triage desk at <span class="text-brand-orange">contact@clearfaultlegal.com</span>.
+            </p>
+
+            <form id="triage-lead-form" onsubmit="handleTriageSubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-gray-300 mb-1.5">FULL NAME / LAW FIRM *</label>
+                  <input type="text" id="triage-name" required placeholder="Attorney John Doe, Esq." class="w-full px-3.5 py-2.5 rounded-lg bg-brand-surface border border-brand-border text-white text-xs focus:border-brand-orange focus:outline-none transition">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-gray-300 mb-1.5">PHONE NUMBER *</label>
+                  <input type="tel" id="triage-phone" required placeholder="(555) 019-9000" class="w-full px-3.5 py-2.5 rounded-lg bg-brand-surface border border-brand-border text-white text-xs focus:border-brand-orange focus:outline-none transition">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-gray-300 mb-1.5">EMAIL ADDRESS *</label>
+                  <input type="email" id="triage-email" required placeholder="counsel@firm.com" class="w-full px-3.5 py-2.5 rounded-lg bg-brand-surface border border-brand-border text-white text-xs focus:border-brand-orange focus:outline-none transition">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-gray-300 mb-1.5">PRIMARY PRACTICE VERTICAL *</label>
+                  <select id="triage-vertical" class="w-full px-3.5 py-2.5 rounded-lg bg-brand-surface border border-brand-border text-white text-xs focus:border-brand-orange focus:outline-none transition">
+                    <option value="Commercial Trucking / 18-Wheeler">Commercial Trucking / 18-Wheeler</option>
+                    <option value="Catastrophic Auto & Rideshare">Catastrophic Auto &amp; Rideshare</option>
+                    <option value="California Probate Real Estate">California Probate Real Estate</option>
+                    <option value="Premises Liability / Structural">Premises Liability / Structural</option>
+                    <option value="Federal Mass Tort / MDL">Federal Mass Tort / MDL</option>
+                    <option value="Pre-Settlement Funding Need">Pre-Settlement Funding Need</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-gray-300 mb-1.5">INCIDENT DETAILS &amp; EVIDENTIARY STATUS</label>
+                <textarea id="triage-details" rows="3" placeholder="Briefly describe liability status, available police report/telematics/photos, and estimated policy limits..." class="w-full px-3.5 py-2.5 rounded-lg bg-brand-surface border border-brand-border text-white text-xs focus:border-brand-orange focus:outline-none transition"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-xs uppercase tracking-wider transition shadow-lg shadow-brand-orange/20 flex items-center justify-center gap-2">
+                <span>Dispatch Case For Review</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                </svg>
+              </button>
+
+              <div id="triage-status" class="hidden text-xs text-center font-mono py-2 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                &check; Lead package prepared. Routing directly to contact@clearfaultlegal.com...
+              </div>
+
+              <p class="text-[10px] text-gray-500 text-center font-mono">
+                Privileged &amp; Confidential Attorney-Client Communication. All submissions protected under FRE 408 &amp; California Evidence Code § 1152.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLAR 02: AFFILIATE COMPARISON MATRIX -->
+  <section id="pillar-affiliates" class="py-20 bg-brand-dark/40 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-brand-cyan mb-2 block">PILLAR 02: MARKETPLACE MATRIX</span>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Pre-Settlement Funding &amp; Legal SaaS Comparison Authority
+          </h3>
+          <p class="text-gray-400 mt-2 text-sm max-w-2xl">
+            Independent, audited comparisons of verified plaintiff cash advances, legal practice management software, and online legal business formations.
+          </p>
+        </div>
+        
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="filterAffiliates('all')" class="aff-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-bold bg-brand-orange text-white transition" data-cat="all">ALL</button>
+          <button onclick="filterAffiliates('funding')" class="aff-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-brand-surface border border-brand-border text-gray-300 hover:text-white transition" data-cat="funding">FUNDING</button>
+          <button onclick="filterAffiliates('saas')" class="aff-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-brand-surface border border-brand-border text-gray-300 hover:text-white transition" data-cat="saas">LEGAL SAAS</button>
+          <button onclick="filterAffiliates('filing')" class="aff-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-brand-surface border border-brand-border text-gray-300 hover:text-white transition" data-cat="filing">FILINGS</button>
+        </div>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="overflow-x-auto rounded-xl border border-brand-border bg-brand-dark shadow-xl">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-brand-surface text-gray-400 font-mono uppercase text-[11px] border-b border-brand-border">
+            <tr>
+              <th class="py-4 px-6">Provider / Platform</th>
+              <th class="py-4 px-6">Category</th>
+              <th class="py-4 px-6">Turnaround / Terms</th>
+              <th class="py-4 px-6">Trust Rating</th>
+              <th class="py-4 px-6">Key Advantage</th>
+              <th class="py-4 px-6 text-right">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-brand-border/60">
+            
+            <!-- Oasis Financial -->
+            <tr class="aff-row hover:bg-brand-surface/50 transition" data-category="funding">
+              <td class="py-4 px-6">
+                <div class="font-bold text-white text-sm">Oasis Financial</div>
+                <div class="text-[11px] text-gray-400">National Pre-Settlement Funding</div>
+              </td>
+              <td class="py-4 px-6 font-mono text-brand-orange">Plaintiff Lawsuit Cash Advance</td>
+              <td class="py-4 px-6 font-mono text-gray-300">24–48 Hours &bull; Non-Recourse</td>
+              <td class="py-4 px-6">
+                <div class="flex items-center text-amber-400 font-bold">
+                  &starf;&starf;&starf;&starf;&starf; <span class="ml-1 text-white text-xs">4.9/5</span>
+                </div>
+              </td>
+              <td class="py-4 px-6 text-gray-300">$500 to $100,000+ advance; pay nothing if you lose your case.</td>
+              <td class="py-4 px-6 text-right">
+                <a href="#triage-lead-form" onclick="triggerAffiliateRedirect('Oasis Financial', 'https://www.oasisfinancial.com')" class="inline-block px-4 py-2 rounded bg-brand-orange hover:bg-brand-orangeHover text-white font-mono font-bold text-[11px] uppercase tracking-wider transition">
+                  Apply Now &rarr;
+                </a>
+              </td>
+            </tr>
+
+            <!-- Clio Legal SaaS -->
+            <tr class="aff-row hover:bg-brand-surface/50 transition" data-category="saas">
+              <td class="py-4 px-6">
+                <div class="font-bold text-white text-sm">Clio (Themis Solutions)</div>
+                <div class="text-[11px] text-gray-400">Cloud Practice Management &amp; CRM</div>
+              </td>
+              <td class="py-4 px-6 font-mono text-brand-cyan">Legal Practice SaaS</td>
+              <td class="py-4 px-6 font-mono text-gray-300">7-Day Free Trial &bull; Instant Cloud</td>
+              <td class="py-4 px-6">
+                <div class="flex items-center text-amber-400 font-bold">
+                  &starf;&starf;&starf;&starf;&starf; <span class="ml-1 text-white text-xs">4.95/5</span>
+                </div>
+              </td>
+              <td class="py-4 px-6 text-gray-300">ABA-approved practice management, trust accounting (IOLTA), and client portal.</td>
+              <td class="py-4 px-6 text-right">
+                <a href="#triage-lead-form" onclick="triggerAffiliateRedirect('Clio', 'https://www.clio.com')" class="inline-block px-4 py-2 rounded bg-brand-cyan hover:bg-cyan-400 text-brand-black font-mono font-bold text-[11px] uppercase tracking-wider transition">
+                  Book Demo &rarr;
+                </a>
+              </td>
+            </tr>
+
+            <!-- JG Wentworth / Peachtree -->
+            <tr class="aff-row hover:bg-brand-surface/50 transition" data-category="funding">
+              <td class="py-4 px-6">
+                <div class="font-bold text-white text-sm">JG Wentworth / Peachtree</div>
+                <div class="text-[11px] text-gray-400">Structured Settlement &amp; Annuities</div>
+              </td>
+              <td class="py-4 px-6 font-mono text-brand-orange">Settlement Buyout &amp; Annuity</td>
+              <td class="py-4 px-6 font-mono text-gray-300">Fast Lump Sum Payout</td>
+              <td class="py-4 px-6">
+                <div class="flex items-center text-amber-400 font-bold">
+                  &starf;&starf;&starf;&starf;&frac12; <span class="ml-1 text-white text-xs">4.7/5</span>
+                </div>
+              </td>
+              <td class="py-4 px-6 text-gray-300">Top-rated buyer for structured settlement payments and lottery annuities.</td>
+              <td class="py-4 px-6 text-right">
+                <a href="#triage-lead-form" onclick="triggerAffiliateRedirect('JG Wentworth', 'https://www.jgwentworth.com')" class="inline-block px-4 py-2 rounded bg-brand-surface border border-brand-border hover:border-brand-orange text-white font-mono font-bold text-[11px] uppercase tracking-wider transition">
+                  Get Quote &rarr;
+                </a>
+              </td>
+            </tr>
+
+            <!-- LegalZoom -->
+            <tr class="aff-row hover:bg-brand-surface/50 transition" data-category="filing">
+              <td class="py-4 px-6">
+                <div class="font-bold text-white text-sm">LegalZoom</div>
+                <div class="text-[11px] text-gray-400">LLC, Living Trust &amp; Trademark</div>
+              </td>
+              <td class="py-4 px-6 font-mono text-emerald-400">Online Legal Filings</td>
+              <td class="py-4 px-6 font-mono text-gray-300">Same-Day Filing Available</td>
+              <td class="py-4 px-6">
+                <div class="flex items-center text-amber-400 font-bold">
+                  &starf;&starf;&starf;&starf;&starf; <span class="ml-1 text-white text-xs">4.8/5</span>
+                </div>
+              </td>
+              <td class="py-4 px-6 text-gray-300">Living trust packages, deed transfers, attorney consults, and 50-state filings.</td>
+              <td class="py-4 px-6 text-right">
+                <a href="#triage-lead-form" onclick="triggerAffiliateRedirect('LegalZoom', 'https://www.legalzoom.com')" class="inline-block px-4 py-2 rounded bg-brand-surface border border-brand-border hover:border-emerald-400 text-white font-mono font-bold text-[11px] uppercase tracking-wider transition">
+                  Start Filing &rarr;
+                </a>
+              </td>
+            </tr>
+
+            <!-- Rocket Lawyer -->
+            <tr class="aff-row hover:bg-brand-surface/50 transition" data-category="filing">
+              <td class="py-4 px-6">
+                <div class="font-bold text-white text-sm">Rocket Lawyer</div>
+                <div class="text-[11px] text-gray-400">Subscription Legal Documents</div>
+              </td>
+              <td class="py-4 px-6 font-mono text-emerald-400">Legal Document Library</td>
+              <td class="py-4 px-6 font-mono text-gray-300">Instant Digital Download</td>
+              <td class="py-4 px-6">
+                <div class="flex items-center text-amber-400 font-bold">
+                  &starf;&starf;&starf;&starf;&frac12; <span class="ml-1 text-white text-xs">4.6/5</span>
+                </div>
+              </td>
+              <td class="py-4 px-6 text-gray-300">Unlimited digital contract creation, e-signatures, and on-call attorney answers.</td>
+              <td class="py-4 px-6 text-right">
+                <a href="#triage-lead-form" onclick="triggerAffiliateRedirect('Rocket Lawyer', 'https://www.rocketlawyer.com')" class="inline-block px-4 py-2 rounded bg-brand-surface border border-brand-border hover:border-emerald-400 text-white font-mono font-bold text-[11px] uppercase tracking-wider transition">
+                  Start Trial &rarr;
+                </a>
+              </td>
+            </tr>
+
+            <!-- Bizee -->
+            <tr class="aff-row hover:bg-brand-surface/50 transition" data-category="filing">
+              <td class="py-4 px-6">
+                <div class="font-bold text-white text-sm">Bizee (formerly Incfile)</div>
+                <div class="text-[11px] text-gray-400">Fast Business Formation</div>
+              </td>
+              <td class="py-4 px-6 font-mono text-emerald-400">LLC &amp; Corporate Entity</td>
+              <td class="py-4 px-6 font-mono text-gray-300">$0 + State Filing Fee</td>
+              <td class="py-4 px-6">
+                <div class="flex items-center text-amber-400 font-bold">
+                  &starf;&starf;&starf;&starf;&starf; <span class="ml-1 text-white text-xs">4.85/5</span>
+                </div>
+              </td>
+              <td class="py-4 px-6 text-gray-300">Free registered agent service for 1 full year with all LLC formation orders.</td>
+              <td class="py-4 px-6 text-right">
+                <a href="#triage-lead-form" onclick="triggerAffiliateRedirect('Bizee', 'https://www.bizee.com')" class="inline-block px-4 py-2 rounded bg-brand-surface border border-brand-border hover:border-emerald-400 text-white font-mono font-bold text-[11px] uppercase tracking-wider transition">
+                  Form LLC &rarr;
+                </a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 p-4 rounded-lg bg-brand-surface/40 border border-brand-border text-xs text-gray-400 flex flex-wrap items-center justify-between gap-4 font-mono">
+        <div>&bull; Partner Network: Impact.com, CJ Affiliate, ShareASale, and Direct Co-Counsel Agreements.</div>
+        <a href="affiliate-partner-directory.md" class="text-brand-orange hover:underline">Read Full Affiliate Partner Blueprint &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PILLAR 03: DROPSHIP EVIDENCE HARDWARE & SLIDE GUIDE STORE -->
+  <section id="pillar-store" class="py-20 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-amber-400 mb-2 block">PILLAR 03: HARDWARE &amp; DIGITAL KITS</span>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Evidence Capture Hardware &amp; Digital Slide Guides
+        </h3>
+        <p class="text-gray-400 mt-2 text-sm sm:text-base">
+          Forensic-grade equipment for accident reconstructionists, investigators, and trial attorneys seeking persuasive courtroom exhibits.
+        </p>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Product 1: Dual-4K Dashcam -->
+        <div class="rounded-xl bg-brand-surface border border-brand-border p-6 flex flex-col justify-between hover:border-brand-orange transition">
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono mb-3">
+              <span class="px-2.5 py-0.5 rounded bg-brand-orange/20 text-brand-orange font-bold">HARDWARE</span>
+              <span class="text-emerald-400">IN STOCK &bull; US WAREHOUSE</span>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-1">ClearFault Dual-4K GPS Telematics Dashcam</h4>
+            <p class="text-xs text-gray-400 mb-4">
+              Front &amp; cabin 4K recording with embedded G-sensor telemetry, Sony STARVIS 2 night vision, and tamper-resistant encrypted SD loop storage.
+            </p>
+            <div class="space-y-1.5 text-xs text-gray-300 font-mono mb-6">
+              <div>&bull; Optical Sensor: Dual Sony STARVIS IMX678</div>
+              <div>&bull; Telemetry: Speed, GPS Latitude/Longitude, G-Force</div>
+              <div>&bull; Evidence Hash: Automatic Event File Locking</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline justify-between mb-4">
+              <div>
+                <span class="text-2xl font-black text-white font-mono">$189.00</span>
+                <span class="text-xs text-gray-500 line-through ml-2 font-mono">$249.00</span>
+              </div>
+              <span class="text-xs text-brand-orange font-mono">Free Priority Shipping</span>
+            </div>
+            <button onclick="openOrderModal('ClearFault Dual-4K GPS Dashcam', 189)" class="w-full py-3 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-xs uppercase tracking-wider transition">
+              Order Hardware &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Encrypted Bodycam -->
+        <div class="rounded-xl bg-brand-surface border border-brand-border p-6 flex flex-col justify-between hover:border-brand-orange transition">
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono mb-3">
+              <span class="px-2.5 py-0.5 rounded bg-brand-orange/20 text-brand-orange font-bold">HARDWARE</span>
+              <span class="text-emerald-400">IN STOCK &bull; PROCESS READY</span>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-1">1080p Encrypted Process Server &amp; Audit Bodycam</h4>
+            <p class="text-xs text-gray-400 mb-4">
+              Password-protected bodycam with AES-256 encrypted internal memory, infrared night vision, and watermark timestamp for process service &amp; scene inspection.
+            </p>
+            <div class="space-y-1.5 text-xs text-gray-300 font-mono mb-6">
+              <div>&bull; Security: AES-256 Non-Tamper Password Lock</div>
+              <div>&bull; Battery: 12-Hour Continuous Recording</div>
+              <div>&bull; Watermark: GPS, Officer ID &amp; Millisecond Timestamp</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline justify-between mb-4">
+              <div>
+                <span class="text-2xl font-black text-white font-mono">$129.00</span>
+                <span class="text-xs text-gray-500 line-through ml-2 font-mono">$169.00</span>
+              </div>
+              <span class="text-xs text-brand-orange font-mono">Process Server Favorite</span>
+            </div>
+            <button onclick="openOrderModal('1080p Encrypted Process Server Bodycam', 129)" class="w-full py-3 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-xs uppercase tracking-wider transition">
+              Order Hardware &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Slide Guide Digital Suite -->
+        <div class="rounded-xl bg-brand-surface border border-brand-border p-6 flex flex-col justify-between hover:border-brand-cyan transition relative overflow-hidden">
+          <div class="absolute -top-3 right-6 px-2.5 py-0.5 rounded bg-brand-cyan text-brand-black font-mono text-[10px] font-bold uppercase tracking-wider">
+            TOP DIGITAL ASSET
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono mb-3">
+              <span class="px-2.5 py-0.5 rounded bg-brand-cyan/20 text-brand-cyan font-bold">DIGITAL SUITE</span>
+              <span class="text-brand-cyan">INSTANT DOWNLOAD</span>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-1">Slide Guide: Jury Persuasion &amp; Demand Master Suite</h4>
+            <p class="text-xs text-gray-400 mb-4">
+              45+ battle-tested PowerPoint &amp; Keynote slide archetypes engineered specifically for policy-limit settlement demands, mediation decks, and trial opening statements.
+            </p>
+            <div class="space-y-1.5 text-xs text-gray-300 font-mono mb-6">
+              <div>&bull; Compliance: Dual FRE 107 &amp; FRE 702 Formats</div>
+              <div>&bull; Modules: Crash Mechanics, EDR Graphs, Biomechanics</div>
+              <div>&bull; License: Unlimited Law Firm Commercial Use</div>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline justify-between mb-4">
+              <div>
+                <span class="text-2xl font-black text-white font-mono">$149.00</span>
+                <span class="text-xs text-gray-500 line-through ml-2 font-mono">$299.00</span>
+              </div>
+              <span class="text-xs text-brand-cyan font-mono">100% Digital Download</span>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <a href="solo-attorney-slide-guide.html" class="py-3 text-center rounded-lg bg-brand-dark border border-brand-border hover:border-brand-cyan text-gray-300 font-mono text-xs transition">
+                Preview Deck
+              </a>
+              <button onclick="openOrderModal('Slide Guide Master Suite', 149)" class="py-3 rounded-lg bg-brand-cyan hover:bg-cyan-400 text-brand-black font-bold text-xs uppercase tracking-wider transition">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PILLAR 04: INVESTIGATIVE STATUTORY DOSSIERS -->
+  <section class="py-20 bg-brand-dark/30 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400 mb-2 block">PILLAR 04: STATUTORY DOSSIERS</span>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Investigative Legal Dossiers &amp; Evidentiary Protocols
+        </h3>
+        <p class="text-gray-400 mt-2 text-sm sm:text-base">
+          In-depth statutory breakdowns bridging California statutory code with cutting-edge engineering standards.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Dossier 1 -->
+        <div class="p-8 rounded-2xl bg-brand-surface border border-brand-border hover:border-emerald-400 transition">
+          <div class="text-xs font-mono text-emerald-400 mb-2 font-bold uppercase tracking-wider">CALIFORNIA STATUTORY ANALYSIS</div>
+          <h4 class="text-xl font-bold text-white mb-3">California Probate Real Estate &amp; Equity Preservation</h4>
+          <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-6">
+            An exhaustive examination of California Probate Code § 850 petitions, the California Partition of Real Property Act, elder financial abuse recovery, and forensic valuation strategies to stop predatory below-market liquidation of family estates.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6 text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-brand-dark text-gray-300 border border-brand-border">Probate Code § 850</span>
+            <span class="px-2.5 py-1 rounded bg-brand-dark text-gray-300 border border-brand-border">Welf. &amp; Inst. § 15610.30</span>
+            <span class="px-2.5 py-1 rounded bg-brand-dark text-gray-300 border border-brand-border">Lis Pendens Defense</span>
+          </div>
+          <a href="probate-equity-dossier.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-brand-black font-bold text-xs font-mono uppercase tracking-wider transition">
+            <span>Read Full Probate Dossier</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Dossier 2 -->
+        <div class="p-8 rounded-2xl bg-brand-surface border border-brand-border hover:border-brand-cyan transition">
+          <div class="text-xs font-mono text-brand-cyan mb-2 font-bold uppercase tracking-wider">EVIDENTIARY PROTOCOL</div>
+          <h4 class="text-xl font-bold text-white mb-3">FRE 107 vs. FRE 702 (Daubert) 3D Courtroom Admissibility</h4>
+          <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-6">
+            The strategic procedural distinction between an Illustrative Aid (FRE 107, barred from jury deliberations) and a Substantive Scientific Simulation (FRE 702, permitted in deliberations). Learn how to engineer exhibits that survive Daubert scrutiny.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6 text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-brand-dark text-gray-300 border border-brand-border">FRE 107 (Dec 2024 Rule)</span>
+            <span class="px-2.5 py-1 rounded bg-brand-dark text-gray-300 border border-brand-border">Daubert / Frye Standard</span>
+            <span class="px-2.5 py-1 rounded bg-brand-dark text-gray-300 border border-brand-border">Bosch CDR Hash Validation</span>
+          </div>
+          <a href="solo-attorney-slide-guide.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-cyan/20 text-brand-cyan hover:bg-brand-cyan hover:text-brand-black font-bold text-xs font-mono uppercase tracking-wider transition">
+            <span>Access Slide Guide Suite</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-black border-t border-brand-border py-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2.5 mb-3">
+            <div class="w-8 h-8 rounded bg-brand-orange flex items-center justify-center font-mono font-bold text-white">CF</div>
+            <span class="text-lg font-bold text-white tracking-tight">CLEAR<span class="text-brand-orange">FAULT</span> LEGAL</span>
+          </div>
+          <p class="text-gray-400 text-xs max-w-sm mb-4">
+            Autonomous legal tech &amp; 3D forensic reconstruction platform. Anchoring digital courtroom advocacy in unassailable physics and transparent statutory authority.
+          </p>
+          <div class="font-mono text-gray-400 space-y-1">
+            <div>&bull; Dispatch: <a href="tel:5550199000" class="text-brand-orange hover:underline">(555) 019-9000</a></div>
+            <div>&bull; Electronic Triage: <a href="mailto:contact@clearfaultlegal.com" class="text-white hover:underline">contact@clearfaultlegal.com</a></div>
+            <div>&bull; Primary Hub: Fresno, California &bull; Nationwide Federal Practice</div>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="font-mono font-bold text-white uppercase tracking-wider mb-3">Quick Navigation</h5>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#forensic-viewport" class="hover:text-brand-orange transition">3D Viewport</a></li>
+            <li><a href="#pillar-triage" class="hover:text-brand-orange transition">Case Triage Desk</a></li>
+            <li><a href="#pillar-affiliates" class="hover:text-brand-orange transition">Affiliate Comparison Matrix</a></li>
+            <li><a href="#pillar-store" class="hover:text-brand-orange transition">Evidence Store</a></li>
+            <li><a href="probate-equity-dossier.html" class="hover:text-brand-orange transition">Probate Dossier</a></li>
+            <li><a href="solo-attorney-slide-guide.html" class="hover:text-brand-orange transition">Slide Guide Suite</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-mono font-bold text-white uppercase tracking-wider mb-3">Legal &amp; Compliance</h5>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="llms.txt" class="hover:text-brand-orange transition">LLMs.txt Manifest</a></li>
+            <li><a href="robots.txt" class="hover:text-brand-orange transition">Robots.txt</a></li>
+            <li><a href="affiliate-partner-directory.md" class="hover:text-brand-orange transition">Partner Directory</a></li>
+            <li><span class="text-gray-400">FRE 107 Demonstrative Protocol</span></li>
+            <li><span class="text-gray-400">FRE 702 Daubert Compliance</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-brand-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-400 font-mono text-[11px]">
+        <div>&copy; 2026 ClearFault Legal (clearfaultlegal.com). All rights reserved.</div>
+        <div class="flex items-center gap-3">
+          <span>Deployment: Vercel Production</span>
+          <span>&bull;</span>
+          <span class="text-emerald-400">Pipeline: Dropbox-to-GitHub Sync</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: CASE REVIEW / ORDER -->
+  <div id="general-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-brand-dark border border-brand-border rounded-2xl max-w-md w-full p-6 relative shadow-2xl">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white font-mono text-lg">&times;</button>
+      <div id="modal-content">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT: THREE.JS 3D SCENE & INTERACTIVITY -->
+  <script>
+    // --- THREE.JS 3D FORENSIC SCENE INITIALIZATION ---
+    let scene, camera, renderer, controls;
+    let pointCloud, truckMesh, carMesh, trajectoryArrow;
+    let isAnimating = true;
+    let animTime = -2.5;
+
+    function initThreeScene() {
+      const container = document.getElementById('three-container');
+      if (!container) return;
+
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      // Scene
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x0a0a0a);
+      scene.fog = new THREE.FogExp2(0x0a0a0a, 0.015);
+
+      // Camera
+      camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+      camera.position.set(24, 18, 32);
+
+      // Renderer
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setSize(width, height);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      container.appendChild(renderer.domElement);
+
+      // Controls
+      if (typeof THREE.OrbitControls !== 'undefined') {
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.maxPolarAngle = Math.PI / 2 - 0.02; // Don't go below ground
+      }
+
+      // Lights
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+      scene.add(ambientLight);
+
+      const directionalLight = new THREE.DirectionalLight(0xff6600, 1.2);
+      directionalLight.position.set(20, 40, 20);
+      scene.add(directionalLight);
+
+      const cyanLight = new THREE.PointLight(0x00e5ff, 1.5, 50);
+      cyanLight.position.set(-10, 15, -10);
+      scene.add(cyanLight);
+
+      // Ground Grid (LiDAR aesthetic)
+      const gridHelper = new THREE.GridHelper(60, 40, 0xff6600, 0x1f2937);
+      gridHelper.position.y = 0;
+      scene.add(gridHelper);
+
+      // LiDAR Point Cloud (Particles)
+      const particleCount = 12000;
+      const geometry = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      const colors = new Float32Array(particleCount * 3);
+
+      const colorCyan = new THREE.Color(0x00e5ff);
+      const colorOrange = new THREE.Color(0xff6600);
+      const colorWhite = new THREE.Color(0xffffff);
+
+      for (let i = 0; i < particleCount; i++) {
+        // Spread particles along simulated intersection & roadside
+        const x = (Math.random() - 0.5) * 55;
+        const z = (Math.random() - 0.5) * 55;
+        const y = Math.random() * (Math.abs(x) > 10 || Math.abs(z) > 10 ? 8 : 1.2);
+
+        positions[i * 3] = x;
+        positions[i * 3 + 1] = y;
+        positions[i * 3 + 2] = z;
+
+        // Choose color based on height/position
+        let c = colorCyan;
+        if (y > 4) c = colorOrange;
+        else if (Math.random() > 0.7) c = colorWhite;
+
+        colors[i * 3] = c.r;
+        colors[i * 3 + 1] = c.g;
+        colors[i * 3 + 2] = c.b;
+      }
+
+      geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+      geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+      const pMaterial = new THREE.PointsMaterial({
+        size: 0.18,
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.85
+      });
+
+      pointCloud = new THREE.Points(geometry, pMaterial);
+      scene.add(pointCloud);
+
+      // Commercial Box Truck Wireframe Model
+      const truckGroup = new THREE.Group();
+      
+      // Truck Box
+      const boxGeo = new THREE.BoxGeometry(4.5, 3.8, 11);
+      const boxMat = new THREE.MeshStandardMaterial({
+        color: 0x18181c,
+        wireframe: false,
+        roughness: 0.4
+      });
+      const boxMesh = new THREE.Mesh(boxGeo, boxMat);
+      boxMesh.position.y = 2.6;
+      boxMesh.position.z = -1;
+      truckGroup.add(boxMesh);
+
+      // Truck Wireframe Edge Overlay
+      const edges = new THREE.EdgesGeometry(boxGeo);
+      const line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xff6600, linewidth: 2 }));
+      line.position.copy(boxMesh.position);
+      truckGroup.add(line);
+
+      // Truck Cab
+      const cabGeo = new THREE.BoxGeometry(4.2, 3.2, 4);
+      const cabMat = new THREE.MeshStandardMaterial({ color: 0x0f0f12 });
+      const cabMesh = new THREE.Mesh(cabGeo, cabMat);
+      cabMesh.position.set(0, 2.0, 5.5);
+      truckGroup.add(cabMesh);
+
+      const cabEdges = new THREE.EdgesGeometry(cabGeo);
+      const cabLine = new THREE.LineSegments(cabEdges, new THREE.LineBasicMaterial({ color: 0x00e5ff }));
+      cabLine.position.copy(cabMesh.position);
+      truckGroup.add(cabLine);
+
+      truckMesh = truckGroup;
+      truckMesh.position.set(0, 0, -15);
+      scene.add(truckMesh);
+
+      // Passenger Sedan Model
+      const carGroup = new THREE.Group();
+      const carBodyGeo = new THREE.BoxGeometry(2.4, 1.4, 5.2);
+      const carBodyMat = new THREE.MeshStandardMaterial({ color: 0x22222a });
+      const carBody = new THREE.Mesh(carBodyGeo, carBodyMat);
+      carBody.position.y = 1.0;
+      carGroup.add(carBody);
+
+      const carEdges = new THREE.EdgesGeometry(carBodyGeo);
+      const carLine = new THREE.LineSegments(carEdges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+      carLine.position.copy(carBody.position);
+      carGroup.add(carLine);
+
+      carMesh = carGroup;
+      carMesh.rotation.y = Math.PI / 2; // Crossing intersection
+      carMesh.position.set(-18, 0, 0);
+      scene.add(carMesh);
+
+      // Trajectory Vector Arrow
+      const dir = new THREE.Vector3(0, 0, 1);
+      const origin = new THREE.Vector3(0, 0.5, -15);
+      const length = 12;
+      const hex = 0xff6600;
+      trajectoryArrow = new THREE.ArrowHelper(dir, origin, length, hex, 1.5, 0.8);
+      scene.add(trajectoryArrow);
+
+      // Resize Handler
+      window.addEventListener('resize', onWindowResize);
+
+      // Controls button hooks
+      document.getElementById('cam-reset')?.addEventListener('click', () => {
+        camera.position.set(24, 18, 32);
+        if (controls) controls.target.set(0, 2, 0);
+      });
+
+      document.getElementById('anim-toggle')?.addEventListener('click', (e) => {
+        isAnimating = !isAnimating;
+        e.target.innerText = isAnimating ? 'Pause Sim' : 'Play Sim';
+      });
+
+      let wireMode = false;
+      document.getElementById('wireframe-toggle')?.addEventListener('click', () => {
+        wireMode = !wireMode;
+        boxMat.wireframe = wireMode;
+        cabMat.wireframe = wireMode;
+        carBodyMat.wireframe = wireMode;
+      });
+
+      // Scrubber hook
+      const scrubber = document.getElementById('time-scrubber');
+      if (scrubber) {
+        scrubber.addEventListener('input', (e) => {
+          isAnimating = false;
+          const btn = document.getElementById('anim-toggle');
+          if (btn) btn.innerText = 'Play Sim';
+          updateSimulationTime(parseFloat(e.target.value) / 10);
+        });
+      }
+
+      animate();
+    }
+
+    function onWindowResize() {
+      const container = document.getElementById('three-container');
+      if (!container || !camera || !renderer) return;
+      camera.aspect = container.clientWidth / container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(container.clientWidth, container.clientHeight);
+    }
+
+    function updateSimulationTime(t) {
+      animTime = t;
+      const tNorm = (animTime + 5.0) / 5.0; // 0 to 1 as time goes from -5.0 to 0.0
+
+      // Update positions
+      if (truckMesh) {
+        truckMesh.position.z = -20 + (tNorm * 18);
+        if (trajectoryArrow) {
+          trajectoryArrow.position.z = truckMesh.position.z;
+        }
+      }
+
+      if (carMesh) {
+        carMesh.position.x = -24 + (tNorm * 22);
+      }
+
+      // Update HUD values
+      const hudTime = document.getElementById('hud-time');
+      const hudSpeed = document.getElementById('hud-speed');
+      const hudThrottle = document.getElementById('hud-throttle');
+      const hudBrake = document.getElementById('hud-brake');
+      const hudDeltaV = document.getElementById('hud-deltav');
+      const scrubberVal = document.getElementById('scrubber-val');
+
+      if (hudTime) hudTime.innerText = animTime.toFixed(1) + 's';
+      if (scrubberVal) scrubberVal.innerText = animTime.toFixed(1) + 's';
+
+      if (animTime < -1.0) {
+        if (hudSpeed) hudSpeed.innerText = (58.0 + (tNorm * 4.2)).toFixed(1) + ' MPH';
+        if (hudThrottle) hudThrottle.innerText = Math.round(84 + (tNorm * 8)) + '%';
+        if (hudBrake) {
+          hudBrake.innerText = 'OFF';
+          hudBrake.className = 'text-red-400 font-bold';
+        }
+        if (hudDeltaV) hudDeltaV.innerText = '0.0 MPH (Pre-Impact)';
+      } else {
+        if (hudSpeed) hudSpeed.innerText = '49.8 MPH (Decel)';
+        if (hudThrottle) hudThrottle.innerText = '0%';
+        if (hudBrake) {
+          hudBrake.innerText = 'LOCKED (100%)';
+          hudBrake.className = 'text-brand-orange font-bold';
+        }
+        if (hudDeltaV) hudDeltaV.innerText = '28.4 MPH (14.2G)';
+      }
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      if (isAnimating) {
+        animTime += 0.02;
+        if (animTime > 0.0) animTime = -5.0;
+        
+        const scrubber = document.getElementById('time-scrubber');
+        if (scrubber) scrubber.value = Math.round(animTime * 10);
+        
+        updateSimulationTime(animTime);
+      }
+
+      if (pointCloud) {
+        pointCloud.rotation.y += 0.0006;
+      }
+
+      if (controls) controls.update();
+      if (renderer && scene && camera) renderer.render(scene, camera);
+    }
+
+    // --- FORM DISPATCH & INTERACTIVITY ---
+    function handleTriageSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('triage-name').value;
+      const phone = document.getElementById('triage-phone').value;
+      const email = document.getElementById('triage-email').value;
+      const vertical = document.getElementById('triage-vertical').value;
+      const details = document.getElementById('triage-details').value;
+
+      const subject = encodeURIComponent(`[PRIORITY LEAD] ClearFault Legal Case Triage - ${vertical} (${name})`);
+      const body = encodeURIComponent(
+        `ClearFault Legal Case Intake Triage Desk\n` +
+        `-----------------------------------------\n` +
+        `Contact Name / Law Firm: ${name}\n` +
+        `Phone Number: ${phone}\n` +
+        `Email Address: ${email}\n` +
+        `Practice Vertical: ${vertical}\n\n` +
+        `Incident & Evidentiary Details:\n${details}\n\n` +
+        `Timestamp: ${new Date().toISOString()}\n` +
+        `Routing Target: contact@clearfaultlegal.com | (555) 019-9000`
+      );
+
+      const statusBox = document.getElementById('triage-status');
+      if (statusBox) {
+        statusBox.classList.remove('hidden');
+      }
+
+      // Open user mail client to guarantee dispatch
+      window.location.href = `mailto:contact@clearfaultlegal.com?subject=${subject}&body=${body}`;
+    }
+
+    function filterAffiliates(cat) {
+      const rows = document.querySelectorAll('.aff-row');
+      const buttons = document.querySelectorAll('.aff-filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'aff-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-bold bg-brand-orange text-white transition';
+        } else {
+          btn.className = 'aff-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono bg-brand-surface border border-brand-border text-gray-300 hover:text-white transition';
+        }
+      });
+
+      rows.forEach(row => {
+        if (cat === 'all' || row.dataset.category === cat) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function triggerAffiliateRedirect(provider, fallbackUrl) {
+      console.log(`[Affiliate Click] Dispatching tracking for ${provider}`);
+      // In production, tracking cookies / redirects can log here
+      window.open(fallbackUrl, '_blank');
+    }
+
+    function openCaseModal() {
+      const modal = document.getElementById('general-modal');
+      const content = document.getElementById('modal-content');
+      if (!modal || !content) return;
+
+      content.innerHTML = `
+        <h3 class="text-lg font-bold text-white mb-2">Priority Evidentiary Review</h3>
+        <p class="text-xs text-gray-400 mb-4">
+          Speak with our forensic triage director directly or submit case files for a 24-hour viability assessment.
+        </p>
+        <div class="space-y-3 font-mono text-xs">
+          <a href="tel:5550199000" class="flex items-center justify-between p-3 rounded-lg bg-brand-surface border border-brand-border hover:border-brand-orange transition text-white">
+            <span>Direct Phone:</span>
+            <span class="text-brand-orange font-bold">(555) 019-9000</span>
+          </a>
+          <a href="mailto:contact@clearfaultlegal.com?subject=[URGENT CASE REVIEW]" class="flex items-center justify-between p-3 rounded-lg bg-brand-surface border border-brand-border hover:border-brand-cyan transition text-white">
+            <span>Email Intake:</span>
+            <span class="text-brand-cyan">contact@clearfaultlegal.com</span>
+          </a>
+        </div>
+        <div class="mt-6 text-center">
+          <a href="#triage-lead-form" onclick="closeModal()" class="text-xs text-gray-400 hover:text-white underline">Or fill out the detailed case form &darr;</a>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+    }
+
+    function openOrderModal(itemName, price) {
+      const modal = document.getElementById('general-modal');
+      const content = document.getElementById('modal-content');
+      if (!modal || !content) return;
+
+      content.innerHTML = `
+        <h3 class="text-lg font-bold text-white mb-1">Confirm Order</h3>
+        <div class="text-xs font-mono text-brand-orange mb-3">${itemName} &bull; $${price}.00 USD</div>
+        <p class="text-xs text-gray-400 mb-4">
+          All orders are processed with priority fulfillment. Physical hardware ships from US warehouses (2–4 business days). Digital kits include instant download link.
+        </p>
+        <form onsubmit="handleOrderSubmit(event, '${itemName}', ${price})" class="space-y-3 text-xs">
+          <div>
+            <label class="block text-[11px] font-mono text-gray-300 mb-1">FULL NAME / FIRM</label>
+            <input type="text" id="order-name" required placeholder="Jane Smith, Law Offices of..." class="w-full p-2 rounded bg-brand-surface border border-brand-border text-white text-xs">
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono text-gray-300 mb-1">EMAIL FOR RECEIPT &amp; TRACKING</label>
+            <input type="email" id="order-email" required placeholder="billing@firm.com" class="w-full p-2 rounded bg-brand-surface border border-brand-border text-white text-xs">
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono text-gray-300 mb-1">DELIVERY ADDRESS / NOTES</label>
+            <textarea id="order-address" rows="2" placeholder="Shipping address or download instructions..." class="w-full p-2 rounded bg-brand-surface border border-brand-border text-white text-xs"></textarea>
+          </div>
+          <button type="submit" class="w-full py-2.5 rounded bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-xs uppercase font-mono tracking-wider transition">
+            Place Order ($${price}.00)
+          </button>
+        </form>
+      `;
+      modal.classList.remove('hidden');
+    }
+
+    function handleOrderSubmit(e, item, price) {
+      e.preventDefault();
+      const name = document.getElementById('order-name').value;
+      const email = document.getElementById('order-email').value;
+      const address = document.getElementById('order-address').value;
+
+      const subject = encodeURIComponent(`[STORE ORDER] ${item} - $${price} (${name})`);
+      const body = encodeURIComponent(
+        `ClearFault Legal Evidence Store Order\n` +
+        `------------------------------------\n` +
+        `Item: ${item}\n` +
+        `Amount: $${price}.00 USD\n` +
+        `Customer: ${name}\n` +
+        `Email: ${email}\n` +
+        `Delivery / Shipping Address:\n${address}\n\n` +
+        `Timestamp: ${new Date().toISOString()}\n` +
+        `Fulfillment: contact@clearfaultlegal.com`
+      );
+
+      closeModal();
+      window.location.href = `mailto:contact@clearfaultlegal.com?subject=${subject}&body=${body}`;
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('general-modal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    // Initialize 3D scene when DOM is ready
+    window.addEventListener('DOMContentLoaded', initThreeScene);
+  </script>
+
+</body>
+</html>
