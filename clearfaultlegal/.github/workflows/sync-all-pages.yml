@@ -1,0 +1,47 @@
+name: Dropbox Complete Suite Sync to GitHub
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository (andrewhovious1595-hub/Drew)
+        uses: actions/checkout@v4
+
+      - name: Pull Complete ClearFault Legal Suite from Dropbox (/ClearFaultLegal)
+        env:
+          DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+        run: |
+          echo "Syncing all /ClearFaultLegal production assets from Dropbox..."
+          FILES=(
+            "index.html"
+            "probate-equity-dossier.html"
+            "solo-attorney-slide-guide.html"
+            "commercial-trucking-spoliation-dossier.html"
+            "daubert-fre702-evidentiary-protocol.html"
+            "pre-settlement-funding-guide.html"
+            "mass-tort-litigation-tracker.html"
+            "sitemap.xml"
+            "affiliate-partner-directory.md"
+            "llms.txt"
+            "robots.txt"
+            "vercel.json"
+          )
+          for file in "${FILES[@]}"; do
+            echo "Fetching $file..."
+            curl -s -X POST https://content.dropboxapi.com/2/files/download \
+              --header "Authorization: Bearer $DROPBOX_ACCESS_TOKEN" \
+              --header "Dropbox-API-Arg: {\"path\": \"/ClearFaultLegal/$file\"}" \
+              -o "$file" || true
+          done
+
+      - name: Commit & Push to Main (Triggering Vercel Production Deploy)
+        run: |
+          git config user.name "ClearFault Auto-Deployer"
+          git config user.email "contact@clearfaultlegal.com"
+          git add .
+          git diff --staged --quiet || (git commit -m "Synchronize full ClearFault Legal suite from Dropbox" && git push origin main)

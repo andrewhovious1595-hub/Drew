@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Settlement Lawsuit Funding Guide &amp; Calculator (2026) | ClearFault Legal</title>
+  <meta name="description" content="Independent comparison authority for pre-settlement lawsuit loans and non-recourse cash advances: Oasis Financial, JG Wentworth, fee caps, eligibility, and advance calculators.">
+  <meta name="keywords" content="pre-settlement funding, lawsuit cash advance, Oasis Financial lawsuit loan, JG Wentworth pre-settlement, non-recourse legal funding, Fresno personal injury advance">
+  <link rel="canonical" href="https://clearfaultlegal.com/pre-settlement-funding-guide.html">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0a0a0a',
+              dark: '#121214',
+              surface: '#18181c',
+              border: '#26262e',
+              orange: '#ff6600',
+              cyan: '#00e5ff',
+              gold: '#f59e0b'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Pre-Settlement Lawsuit Funding Guide & Comparison Authority (2026)",
+    "description": "Comprehensive guide on non-recourse legal funding, fee schedules, and attorney eligibility criteria.",
+    "author": {
+      "@type": "Organization",
+      "name": "ClearFault Legal Financial Division"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ClearFault Legal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://clearfaultlegal.com/assets/logo.png"
+      }
+    },
+    "datePublished": "2026-11-01",
+    "dateModified": "2026-11-07"
+  }
+  </script>
+</head>
+<body class="bg-brand-black text-white selection:bg-brand-orange selection:text-white">
+
+  <!-- TOP HUD -->
+  <div class="bg-brand-dark border-b border-brand-border text-xs py-2 px-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2 font-mono text-gray-400">
+        <a href="/" class="text-brand-orange hover:underline font-bold">&larr; BACK TO CLEARFAULT HUB</a>
+        <span class="text-brand-border">|</span>
+        <span class="text-brand-gold">FUNDING COMPARISON PORTAL</span>
+      </div>
+      <div class="font-mono text-xs">
+        <a href="tel:5550199000" class="text-white hover:text-brand-orange">(555) 019-9000</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    
+    <!-- Hero -->
+    <div class="mb-10 pb-8 border-b border-brand-border">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-amber-500/10 text-amber-400 border border-amber-500/30 mb-4">
+        CONSUMER &amp; ATTORNEY PRE-SETTLEMENT RESOURCE
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+        2026 Pre-Settlement Lawsuit Funding Guide &amp; Matrix
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+        Everything injured plaintiffs and attorneys must know about non-recourse lawsuit cash advances: avoiding predatory monthly compounding interest, verifying underwriting guidelines, and calculating eligible advance amounts.
+      </p>
+    </div>
+
+    <!-- Core Rule Callout -->
+    <div class="p-6 rounded-xl bg-brand-surface border border-brand-border mb-12">
+      <h3 class="text-sm font-mono font-bold uppercase tracking-wider text-brand-gold mb-2">What Is "Non-Recourse" Funding?</h3>
+      <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+        Unlike personal loans or credit cards, true pre-settlement funding is completely <strong>non-recourse</strong>. The funding company purchases an equitable lien against the potential future settlement or jury verdict. <strong>If you lose your case, you owe zero dollars.</strong> Neither your personal bank accounts, your home, nor your credit score can ever be touched.
+      </p>
+    </div>
+
+    <!-- Interactive Advance Estimator -->
+    <div class="p-8 rounded-2xl bg-brand-dark border border-brand-border shadow-2xl mb-12">
+      <div class="text-xs font-mono font-bold text-brand-gold uppercase tracking-wider mb-2">CALCULATOR TOOL</div>
+      <h3 class="text-xl font-bold text-white mb-2">Pre-Settlement Cash Advance Estimator</h3>
+      <p class="text-xs text-gray-400 mb-6">
+        Most pre-settlement underwriters approve advances between <strong>10% and 20%</strong> of the net expected settlement value to ensure sufficient recovery for the plaintiff after attorney fees and medical liens.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label class="block text-xs font-mono text-gray-300 mb-2">ESTIMATED TOTAL CASE VALUE ($)</label>
+          <input type="number" id="calc-val" value="150000" step="5000" class="w-full p-2.5 rounded bg-brand-surface border border-brand-border text-white text-xs font-mono" oninput="calcAdvance()">
+        </div>
+        <div>
+          <label class="block text-xs font-mono text-gray-300 mb-2">CASE PRACTICE AREA</label>
+          <select id="calc-area" class="w-full p-2.5 rounded bg-brand-surface border border-brand-border text-white text-xs font-mono" onchange="calcAdvance()">
+            <option value="0.15">Commercial Trucking / 18-Wheeler (High Confidence)</option>
+            <option value="0.12" selected>Auto Accident / Rideshare (Standard)</option>
+            <option value="0.10">Slip & Fall / Premises Liability (Moderate)</option>
+            <option value="0.10">Probate Real Estate Partition Dispute</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-xl bg-brand-surface border border-brand-border flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+        <div>
+          <span class="text-gray-400 block text-[11px]">Estimated Eligible Advance Range:</span>
+          <span id="res-range" class="text-brand-gold font-bold text-xl">$15,000 – $22,500</span>
+        </div>
+        <button onclick="openFundingModal()" class="px-5 py-2.5 rounded bg-brand-gold hover:bg-amber-500 text-brand-black font-bold uppercase tracking-wider transition">
+          Apply For Fast-Track Advance &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- Provider Matrix -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-bold text-white mb-4">Independent Provider Comparisons</h2>
+      
+      <div class="p-6 rounded-xl bg-brand-surface border border-brand-border flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <h4 class="text-lg font-bold text-white">Oasis Financial</h4>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono">TOP RATED</span>
+          </div>
+          <p class="text-xs text-gray-300 max-w-xl">
+            Over 25 years of service with more than $1 billion funded. Fastest approval times (typically 24 to 48 hours once attorney records are received). Advances from $500 to $100,000+.
+          </p>
+        </div>
+        <a href="https://www.oasisfinancial.com" target="_blank" class="px-5 py-2.5 text-center rounded bg-brand-orange hover:bg-brand-orangeHover text-white font-mono text-xs font-bold uppercase transition shrink-0">
+          Apply With Oasis &rarr;
+        </a>
+      </div>
+
+      <div class="p-6 rounded-xl bg-brand-surface border border-brand-border flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <h4 class="text-lg font-bold text-white">JG Wentworth / Peachtree</h4>
+            <span class="text-xs px-2 py-0.5 rounded bg-brand-cyan/20 text-brand-cyan font-mono">STRUCTURED PAYOUTS</span>
+          </div>
+          <p class="text-xs text-gray-300 max-w-xl">
+            The recognized leader in purchasing future structured settlement payment streams and pre-settlement advances for high-value catastrophic claims.
+          </p>
+        </div>
+        <a href="https://www.jgwentworth.com" target="_blank" class="px-5 py-2.5 text-center rounded bg-brand-surface border border-brand-border hover:border-brand-orange text-white font-mono text-xs font-bold uppercase transition shrink-0">
+          Get Quote &rarr;
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-border py-8 text-center text-xs text-gray-400 font-mono">
+    <div class="max-w-6xl mx-auto px-4">
+      &copy; 2026 ClearFault Legal &bull; Funding Desk: <a href="mailto:contact@clearfaultlegal.com" class="text-white hover:underline">contact@clearfaultlegal.com</a> &bull; (555) 019-9000
+    </div>
+  </footer>
+
+  <script>
+    function calcAdvance() {
+      const val = parseFloat(document.getElementById('calc-val').value) || 0;
+      const rate = parseFloat(document.getElementById('calc-area').value);
+
+      const minAdvance = Math.round(val * (rate * 0.8));
+      const maxAdvance = Math.round(val * (rate * 1.25));
+
+      document.getElementById('res-range').innerText = '$' + minAdvance.toLocaleString() + ' – $' + maxAdvance.toLocaleString();
+    }
+
+    function openFundingModal() {
+      const val = document.getElementById('calc-val').value;
+      const subject = encodeURIComponent(`[PRE-SETTLEMENT FUNDING INTAKE] Est Value $${val}`);
+      const body = encodeURIComponent(
+        `ClearFault Legal Pre-Settlement Funding Application\\n` +
+        `-------------------------------------------------\\n` +
+        `Estimated Case Value: $${val}\\n` +
+        `Please connect me with verified pre-settlement funding underwriters for a 24-hour non-recourse cash advance.\\n\\n` +
+        `Timestamp: ${new Date().toISOString()}\\n` +
+        `Routing: contact@clearfaultlegal.com`
+      );
+      window.location.href = `mailto:contact@clearfaultlegal.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+
+</body>
+</html>
