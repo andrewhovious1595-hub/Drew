@@ -1,0 +1,32 @@
+name: Dropbox to GitHub & Vercel Auto-Sync
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-dropbox-to-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository (andrewhovious1595-hub/Drew)
+        uses: actions/checkout@v4
+
+      - name: Pull Latest Production Files from Dropbox (/ClearFaultLegal)
+        env:
+          DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+        run: |
+          echo "Syncing /ClearFaultLegal production files from Dropbox to repository root..."
+          for file in index.html probate-equity-dossier.html solo-attorney-slide-guide.html affiliate-partner-directory.md llms.txt robots.txt vercel.json; do
+            curl -s -X POST https://content.dropboxapi.com/2/files/download \
+              --header "Authorization: Bearer $DROPBOX_ACCESS_TOKEN" \
+              --header "Dropbox-API-Arg: {\"path\": \"/ClearFaultLegal/$file\"}" \
+              -o "$file" || true
+          done
+
+      - name: Commit & Trigger Vercel Production Deploy
+        run: |
+          git config user.name "ClearFault Auto-Deployer"
+          git config user.email "contact@clearfaultlegal.com"
+          git add .
+          git diff --staged --quiet || (git commit -m "Auto-sync ClearFault Legal 4-Pillar Hub from Dropbox" && git push origin main)
