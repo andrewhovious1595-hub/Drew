@@ -1,0 +1,13 @@
+# ClearFault Legal SPA & API Routing Rules
+/api/rss/ads-feed.xml  /feed.xml  200
+/results    /index.html   200
+/report     /index.html   200
+/attorneys  /index.html   200
+/states     /index.html   200
+/forms      /index.html   200
+/guides     /index.html   200
+/portals    /index.html   200
+/rss-api    /index.html   200
+/sitemap    /index.html   200
+/checkout   /index.html   200
+/*          /index.html   200

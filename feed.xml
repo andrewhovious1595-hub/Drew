@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:cf="https://clearfaultlegal.com/ns/ad-rss/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ClearFault Legal — Dynamic Ad, Affiliate &amp; Self-Help RSS Stream</title>
+    <link>https://clearfaultlegal.com/rss-api</link>
+    <description>Real-time contextual RSS 2.0 stream for legal self-help guides, Bar-certified attorney referral placements, and affiliate ad slots.</description>
+    <language>en-us</language>
+    <cf:queryContext query="Public Records" jurisdiction="All States" category="name" adSlotId="ca-pub-clearfault-88412" />
+    <item>
+      <title>[Sponsored Ad Field] Instant Background &amp; Court Docket Verification</title>
+      <link>https://www.americanbar.org/groups/lawyer_referral/resources/lawyer-referral-directory/</link>
+      <guid isPermaLink="false">cf-rss-ad-default-1</guid>
+      <category>Sponsored Ad Field</category>
+      <cf:adTargeting slot="top-leaderboard-728x90" cpcBid="$2.45" network="AdSense + Direct Affiliate" />
+      <description>Verify public records, civil dockets, and consult Bar-certified attorney referral panels.</description>
+    </item>
+    <item>
+      <title>[Attorney Referral] Find a State Bar Certified Lawyer Referral Service</title>
+      <link>https://www.calbar.ca.gov/public/find-legal-professionals/find-lawyer-referral-service</link>
+      <guid isPermaLink="false">cf-rss-lrs-default-2</guid>
+      <category>Bar Referral Directory</category>
+      <cf:adTargeting slot="sidebar-attorney-card" cpcBid="$3.10" network="ABA / State Bar LRS" />
+      <description>Connect with a vetted local lawyer for a low-cost 30-minute consultation through official Bar association referral networks.</description>
+    </item>
+  </channel>
+</rss>

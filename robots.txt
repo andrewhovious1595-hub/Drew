@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /privacy/remove-my-public-record
+
+Sitemap: https://clearfaultlegal.com/sitemap.xml
