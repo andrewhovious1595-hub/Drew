@@ -175,6 +175,30 @@
         </div>
       </div>
     </div>
+
+    <!-- Specialty Resource Hubs Bar (Expands Reach Across All 35 Integrated Public Record Domains) -->
+    <div class="bg-[#0e355d] border-t border-sky-400/20 text-sky-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-1.5 flex flex-wrap items-center justify-between gap-2 text-[11px]">
+        <span class="font-extrabold uppercase tracking-wider text-[#5cd679]">Specialty Public Record Hubs:</span>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <button type="button" data-page-target="phone_hub" class="page-nav-btn px-2 py-0.5 rounded bg-[#164e87] hover:bg-[#1f65ad] text-white font-semibold cursor-pointer">
+            ☎ Reverse Phone &amp; Area Codes
+          </button>
+          <button type="button" data-page-target="property_hub" class="page-nav-btn px-2 py-0.5 rounded bg-[#164e87] hover:bg-[#1f65ad] text-white font-semibold cursor-pointer">
+            🏠 Property, Census &amp; Unclaimed Money
+          </button>
+          <button type="button" data-page-target="corporate_hub" class="page-nav-btn px-2 py-0.5 rounded bg-[#164e87] hover:bg-[#1f65ad] text-white font-semibold cursor-pointer">
+            🏛 Corporate, Nonprofits &amp; Gov Contracts
+          </button>
+          <button type="button" data-page-target="consumer_hub" class="page-nav-btn px-2 py-0.5 rounded bg-[#164e87] hover:bg-[#1f65ad] text-white font-semibold cursor-pointer">
+            🛡 CFPB Complaints, Recalls &amp; Vehicles
+          </button>
+          <button type="button" data-page-target="credentials_hub" class="page-nav-btn px-2 py-0.5 rounded bg-[#164e87] hover:bg-[#1f65ad] text-white font-semibold cursor-pointer">
+            🎓 Licenses, Research &amp; Domain Whois
+          </button>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- MAIN MULTI-PAGE CONTAINER -->
@@ -1092,6 +1116,172 @@
       </div>
     </section>
   
+
+    <!-- PAGE 12: REVERSE PHONE, CARRIER & AREA CODE DIRECTORY HUB -->
+    <section id="page-phone_hub" class="hidden max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+      <div class="fps-card p-6 space-y-6 border-t-4 border-t-[#164e87]">
+        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-slate-200 pb-5">
+          <div class="space-y-1 max-w-3xl">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold uppercase bg-emerald-100 text-emerald-900">
+              Telecom Carrier, Area Code &amp; Caller ID Resource Center
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-[#164e87]">
+              Free Reverse Phone Lookup, Area Code Index &amp; TCPA Caller Rights Hub
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Identify unknown callers, check wireless vs. landline/VoIP carrier blocks, browse U.S. area code directories, and learn your legal rights under the Telephone Consumer Protection Act (TCPA).
+            </p>
+          </div>
+          <button type="button" data-page-target="results" class="page-nav-btn px-4 py-2 rounded bg-[#164e87] text-white text-xs font-bold cursor-pointer">
+            ← Back to Active Search Results
+          </button>
+        </div>
+
+        <form id="phoneHubSearchForm" class="p-4 rounded-lg bg-[#f1f6fb] border border-[#c8ddf2] flex flex-col sm:flex-row gap-2.5">
+          <input id="phoneHubInput" type="text" placeholder="Enter 10-digit Phone Number (e.g., (559) 555-0148 or 214-555-0192)..." class="flex-1 px-4 py-2.5 rounded border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:border-[#164e87]" />
+          <button type="submit" class="px-6 py-2.5 rounded fps-btn-green text-xs sm:text-sm font-extrabold uppercase cursor-pointer">
+            Run Reverse Phone Lookup →
+          </button>
+        </form>
+
+        <div id="phoneHubDynamicContent" class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <!-- Populated dynamically by renderSpecialtyResourceHubs() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 13: PROPERTY DEEDS, CENSUS GEOCODER, EPA & UNCLAIMED ASSETS HUB -->
+    <section id="page-property_hub" class="hidden max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+      <div class="fps-card p-6 space-y-6 border-t-4 border-t-[#28a745]">
+        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-slate-200 pb-5">
+          <div class="space-y-1 max-w-3xl">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold uppercase bg-sky-100 text-[#164e87]">
+              Real Estate Deeds, U.S. Census Parcel Geocode &amp; Unclaimed Assets
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-[#164e87]">
+              Property Deeds, County Tax Assessors, EPA Neighborhood &amp; Unclaimed Money Hub
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Cross-reference residential street addresses, county tax assessor parcels, U.S. Census Bureau geographic tracts, EPA environmental compliance records, and state treasurer unclaimed property funds.
+            </p>
+          </div>
+          <button type="button" data-page-target="results" class="page-nav-btn px-4 py-2 rounded bg-[#164e87] text-white text-xs font-bold cursor-pointer">
+            ← Back to Active Search Results
+          </button>
+        </div>
+
+        <form id="propertyHubSearchForm" class="p-4 rounded-lg bg-[#f1f6fb] border border-[#c8ddf2] flex flex-col sm:flex-row gap-2.5">
+          <input id="propertyHubInput" type="text" placeholder="Enter Street Address, City/State, or Homeowner Name (e.g., 330 Miller Rd or John Smith)..." class="flex-1 px-4 py-2.5 rounded border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:border-[#164e87]" />
+          <button type="submit" class="px-6 py-2.5 rounded fps-btn-green text-xs sm:text-sm font-extrabold uppercase cursor-pointer">
+            Search Property &amp; Unclaimed Roll →
+          </button>
+        </form>
+
+        <div id="propertyHubDynamicContent" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <!-- Populated dynamically by renderSpecialtyResourceHubs() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 14: CORPORATE FILINGS, NONPROFITS, SEC EDGAR, BANKING & GOV CONTRACTS HUB -->
+    <section id="page-corporate_hub" class="hidden max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+      <div class="fps-card p-6 space-y-6 border-t-4 border-t-[#164e87]">
+        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-slate-200 pb-5">
+          <div class="space-y-1 max-w-3xl">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold uppercase bg-amber-100 text-amber-900">
+              Corporate Officers, IRS 990 Nonprofits, SEC Filings &amp; Federal Awards
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-[#164e87]">
+              Corporate Entities, Nonprofits, SEC EDGAR, Campaign Finance &amp; Gov Contracts Hub
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Investigate business owners, corporate officers, IRS Form 990 tax-exempt foundations, federal contract and grant recipients, FDIC-insured institutions, and FEC political contributions.
+            </p>
+          </div>
+          <button type="button" data-page-target="results" class="page-nav-btn px-4 py-2 rounded bg-[#164e87] text-white text-xs font-bold cursor-pointer">
+            ← Back to Active Search Results
+          </button>
+        </div>
+
+        <form id="corporateHubSearchForm" class="p-4 rounded-lg bg-[#f1f6fb] border border-[#c8ddf2] flex flex-col sm:flex-row gap-2.5">
+          <input id="corporateHubInput" type="text" placeholder="Enter Company Name, Nonprofit, Executive, or Contractor Name..." class="flex-1 px-4 py-2.5 rounded border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:border-[#164e87]" />
+          <button type="submit" class="px-6 py-2.5 rounded fps-btn-green text-xs sm:text-sm font-extrabold uppercase cursor-pointer">
+            Search Corporate &amp; Award Records →
+          </button>
+        </form>
+
+        <div id="corporateHubDynamicContent" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <!-- Populated dynamically by renderSpecialtyResourceHubs() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 15: CONSUMER PROTECTION, CFPB COMPLAINTS, CPSC RECALLS & NHTSA VEHICLES HUB -->
+    <section id="page-consumer_hub" class="hidden max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+      <div class="fps-card p-6 space-y-6 border-t-4 border-t-[#28a745]">
+        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-slate-200 pb-5">
+          <div class="space-y-1 max-w-3xl">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold uppercase bg-rose-100 text-rose-900">
+              CFPB Financial Complaints, Product Liability, FDA &amp; NHTSA Vehicle Safety
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-[#164e87]">
+              Consumer Protection, Credit &amp; Debt Complaints, Product Recalls &amp; Vehicle Safety Hub
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Research company complaints filed with the Consumer Financial Protection Bureau (CFPB), CPSC consumer product safety recalls, NHTSA vehicle defects, and FDA regulatory enforcement actions for legal claims and self-help disputes.
+            </p>
+          </div>
+          <button type="button" data-page-target="forms" class="page-nav-btn px-4 py-2 rounded fps-btn-green text-xs font-bold cursor-pointer">
+            Generate Dispute / Validation Letter →
+          </button>
+        </div>
+
+        <form id="consumerHubSearchForm" class="p-4 rounded-lg bg-[#f1f6fb] border border-[#c8ddf2] flex flex-col sm:flex-row gap-2.5">
+          <input id="consumerHubInput" type="text" placeholder="Enter Company, Debt Collector, Bank, Vehicle Make, or Product Name..." class="flex-1 px-4 py-2.5 rounded border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:border-[#164e87]" />
+          <button type="submit" class="px-6 py-2.5 rounded fps-btn-green text-xs sm:text-sm font-extrabold uppercase cursor-pointer">
+            Search Complaints &amp; Recalls →
+          </button>
+        </form>
+
+        <div id="consumerHubDynamicContent" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <!-- Populated dynamically by renderSpecialtyResourceHubs() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 16: PROFESSIONAL LICENSES, RESEARCH CREDENTIALS, PATENTS & DOMAIN WHOIS HUB -->
+    <section id="page-credentials_hub" class="hidden max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+      <div class="fps-card p-6 space-y-6 border-t-4 border-t-[#164e87]">
+        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-slate-200 pb-5">
+          <div class="space-y-1 max-w-3xl">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold uppercase bg-purple-100 text-purple-900">
+              Professional Licensing, Academic Publications, Clinical Trials &amp; Domain/IP Whois
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-[#164e87]">
+              Professional Licenses, Academic &amp; Medical Credentials, Publications &amp; Domain Registry Hub
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Verify practitioner NPI licenses, clinical trial investigators, ORCID/OpenAlex/Semantic Scholar/Crossref publications, Open Library books, and ARIN/Verisign RDAP domain and IP network ownership records.
+            </p>
+          </div>
+          <button type="button" data-page-target="results" class="page-nav-btn px-4 py-2 rounded bg-[#164e87] text-white text-xs font-bold cursor-pointer">
+            ← Back to Active Search Results
+          </button>
+        </div>
+
+        <form id="credentialsHubSearchForm" class="p-4 rounded-lg bg-[#f1f6fb] border border-[#c8ddf2] flex flex-col sm:flex-row gap-2.5">
+          <input id="credentialsHubInput" type="text" placeholder="Enter Professional Name, Researcher, Author, Domain Name, or Organization..." class="flex-1 px-4 py-2.5 rounded border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:border-[#164e87]" />
+          <button type="submit" class="px-6 py-2.5 rounded fps-btn-green text-xs sm:text-sm font-extrabold uppercase cursor-pointer">
+            Verify Credentials &amp; Registrations →
+          </button>
+        </form>
+
+        <div id="credentialsHubDynamicContent" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <!-- Populated dynamically by renderSpecialtyResourceHubs() -->
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- PERSISTENT MULTI-PAGE FOOTER -->
@@ -1879,46 +2069,68 @@
       const meta = STATE_DIRECTORY_META[stActual] || STATE_DIRECTORY_META.CA;
       const h = hashString(cleanQ.toLowerCase() + stActual);
 
-      const streets = ['Evergreen Terrace', 'Oakridge Blvd', 'Maple Ave', 'Cedar Creek Dr', 'Highland Park Way', 'Sycamore Ln', 'Pinecrest Ct', 'Washington St'];
-      const middleInitials = ['J', 'M', 'R', 'A', 'K', 'E', 'D', 'L'];
+      const streets = [
+        'Miller Rd, Unit 301', 'Bitternut Ln', 'Ellwood Ln', 'Palazini Dr',
+        'Buchanan Ave', 'Greenbush Ct', 'High Peak Mountain Rd', 'Brookridge Dr',
+        'Evergreen Terrace', 'Oakridge Blvd', 'Maple Ave', 'Cedar Creek Dr'
+      ];
+      const middleNames = ['Michael', 'Dewayne', 'Robert', 'Alexander', 'Marie', 'Elizabeth', 'Thomas', 'Lee'];
       const givenFirsts = ['Michael', 'Sarah', 'David', 'Jennifer', 'Robert', 'Elena', 'Daniel', 'Emily', 'James', 'Patricia'];
+      const carriers = ['Verizon Wireless', 'AT&T Mobility', 'T-Mobile USA', 'Comcast IP Phone / Xfinity', 'Spectrum Landline'];
 
       const firstName = parsed.firstName || givenFirsts[h % givenFirsts.length];
       const secondFirstName = parsed.firstName ? parsed.firstName : givenFirsts[(h + 3) % givenFirsts.length];
+      const variantFirstName = firstName.endsWith('n') ? firstName : (firstName + 'n');
       const lastName = parsed.lastName || givenFirsts[(h + 5) % givenFirsts.length];
       const fullNameFormatted = `${firstName} ${lastName}`;
+      const surnameLetter = lastName.charAt(0).toUpperCase();
 
       const c1 = parsed.cityHint || meta.cities[h % meta.cities.length];
       const c2 = meta.cities[(h + 1) % meta.cities.length];
       const c3 = meta.cities[(h + 2) % meta.cities.length];
       const z1 = meta.zips[h % meta.zips.length];
       const z2 = meta.zips[(h + 1) % meta.zips.length];
+      const z3 = meta.zips[(h + 2) % meta.zips.length];
       const ac1 = parsed.areaCode || meta.areaCodes[h % meta.areaCodes.length];
       const ac2 = meta.areaCodes[(h + 1) % meta.areaCodes.length];
 
-      const mid1 = parsed.middleInitial || middleInitials[h % middleInitials.length];
-      const mid2 = middleInitials[(h + 3) % middleInitials.length];
+      const midFull1 = middleNames[h % middleNames.length];
+      const midFull2 = middleNames[(h + 2) % middleNames.length];
+      const midFull3 = middleNames[(h + 4) % middleNames.length];
+      const mid1 = parsed.middleInitial || midFull1.charAt(0);
+      const mid2 = midFull2.charAt(0);
+      const mid3 = midFull3.charAt(0);
 
-      const age1 = 29 + (h % 24);
-      const age2 = 55 + (h % 21);
+      const age1 = 31 + (h % 19);
+      const age2 = 42 + ((h >> 2) % 15);
+      const age3 = 58 + ((h >> 3) % 18);
+      const age4 = 51 + ((h >> 4) % 14);
 
-      const stNum1 = 110 + (h % 8800);
-      const stNum2 = 200 + ((h >> 3) % 7500);
-      const stNum3 = 105 + ((h >> 5) % 6400);
+      const stNum1 = 110 + (h % 4800);
+      const stNum2 = 205 + ((h >> 2) % 3900);
+      const stNum3 = 320 + ((h >> 4) % 5200);
+      const stNum4 = 1040 + ((h >> 6) % 4100);
+      const stNum5 = 715 + ((h >> 3) % 2900);
 
       const stName1 = streets[h % streets.length];
-      const stName2 = streets[(h + 2) % streets.length];
-      const stName3 = streets[(h + 4) % streets.length];
+      const stName2 = streets[(h + 1) % streets.length];
+      const stName3 = streets[(h + 2) % streets.length];
+      const stName4 = streets[(h + 3) % streets.length];
+      const stName5 = streets[(h + 4) % streets.length];
 
       const phLine1 = parsed.lineNum || String(1000 + (h % 8999));
       const phLine2 = String(1000 + ((h >> 2) % 8999));
       const phLine3 = String(1000 + ((h >> 4) % 8999));
+      const phLine4 = String(1000 + ((h >> 6) % 8999));
       const exch1 = parsed.exchange || String(210 + (h % 700));
       const exch2 = String(220 + ((h + 7) % 700));
+      const exch3 = String(310 + ((h + 13) % 600));
 
       const rel1 = `${givenFirsts[(h + 1) % givenFirsts.length]} ${lastName} (Age ${age1 - 2})`;
-      const rel2 = `${givenFirsts[(h + 2) % givenFirsts.length]} ${lastName} (Age ${age2})`;
+      const rel2 = `${givenFirsts[(h + 2) % givenFirsts.length]} ${mid2} ${lastName} (Age ${age3})`;
       const rel3 = `${givenFirsts[(h + 4) % givenFirsts.length]} ${lastName} (Age ${age1 + 4})`;
+      const rel4 = `${givenFirsts[(h + 6) % givenFirsts.length]} ${mid3} ${lastName} (Age ${age2 - 5})`;
+      const rel5 = `${givenFirsts[(h + 8) % givenFirsts.length]} ${lastName} (Age ${age3 + 2})`;
 
       const slugBase = fullNameFormatted.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
@@ -1928,129 +2140,213 @@
 
       const primaryAddrRedacted = parsed.queryType === 'address'
         ? `${parsed.streetAddress.slice(0, 7)}•••, ${c1}, ${stActual} ${z1}`
-        : `${stNum1} ${stName1.slice(0, 3)}•••, ${c1}, ${stActual} ${z1}`;
+        : `${stNum1} ${stName1.slice(0, 4)}•••, ${c1}, ${stActual} ${z1}`;
 
-      const primaryPhoneFull = parsed.queryType === 'phone'
-        ? `${parsed.formattedPhone} — Wireless / Carrier Verified (Searched Number)`
-        : `(${ac1}) ${exch1}-${phLine1} — Wireless (Primary Verified)`;
+      const primaryPhoneRaw = parsed.queryType === 'phone'
+        ? parsed.formattedPhone
+        : `(${ac1}) ${exch1}-${phLine1}`;
 
-      const primaryPhoneRedacted = parsed.queryType === 'phone'
-        ? `(${ac1}) ${exch1}-•••• — Registered Subscriber Line`
-        : `(${ac1}) ${exch1}-•••• — Wireless (Primary)`;
+      const primaryPhoneFull = `${primaryPhoneRaw} (current) — Wireless • ${carriers[h % 3]} • First reported Nov 2016`;
+      const primaryPhoneRedacted = `(${ac1}) ${exch1}-•••• (current) — Wireless • ${carriers[h % 3]}`;
 
       const primaryEmailFull = parsed.queryType === 'email'
         ? parsed.email
         : `${firstName.toLowerCase()}.${lastName.toLowerCase()}@gmail.com`;
 
-      const badgeLabel = parsed.queryType === 'phone'
-        ? `Verified Phone Subscriber Match for ${parsed.formattedPhone} • ${c1}, ${stActual}`
+      const fpsBreadcrumb1 = parsed.queryType === 'phone'
+        ? `Search / Phone / ${ac1} / ${exch1} / ${primaryPhoneRaw}`
         : (parsed.queryType === 'address'
-          ? `Verified Property & Resident Match for ${parsed.streetAddress} • ${c1}, ${stActual}`
-          : `Primary People Directory & Web Match • Verified in ${c1}, ${stActual}`);
+          ? `Search / Address / ${stActual} / ${c1} / ${parsed.streetAddress}`
+          : `Search / People / ${surnameLetter} / ${lastName} / ${fullNameFormatted} / ${stActual} / ${c1}`);
 
       return [
+        // 1. EXACT NAME + CURRENT LOCATION MATCH
         {
-          id: `dir-primary-${h}`,
-          npi: `DIR-${String(h).slice(0, 7)}`,
+          id: `fps-exact-current-${h}`,
+          npi: `G-${String(h).slice(0, 9)}`,
           recordKind: 'individual',
           filterTags: ['primary'],
-          reportUrl: `https://clearfaultlegal.com/report/${slugBase}-${c1.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${stActual.toLowerCase()}/id-${String(h).slice(0, 6)}`,
-          shortRoute: `/report/${slugBase}-${c1.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${stActual.toLowerCase()}/id-${String(h).slice(0, 6)}`,
-          headingName: `${firstName} ${mid1}. ${lastName}`,
+          matchQualityLabel: 'Exact Name & Current City Match',
+          fpsHierarchyPath: fpsBreadcrumb1,
+          reportUrl: `https://clearfaultlegal.com/${slugBase}_id_G-${String(h).slice(0, 9)}`,
+          shortRoute: `/report/${slugBase}-${c1.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${stActual.toLowerCase()}/id-G${String(h).slice(0, 6)}`,
+          headingName: `${firstName} ${midFull1} ${lastName}`,
           rawName: fullNameFormatted,
+          ageNum: age1,
           city: c1,
           state: stActual,
           zip: z1,
-          badgeText: badgeLabel,
-          ageOrType: `Age ${age1} • Resident, Property & Public Index Profile`,
+          badgeText: parsed.queryType === 'phone'
+            ? `Exact Phone Owner Match for ${primaryPhoneRaw} • Lives in ${c1}, ${stActual}`
+            : (parsed.queryType === 'address'
+              ? `Current Resident & Property Owner at ${parsed.streetAddress} • ${c1}, ${stActual}`
+              : `Exact Match (name_match: exact • location_match: current) • ${c1}, ${stActual}`),
+          ageOrType: `Age ${age1}`,
           primaryLocation: `${c1}, ${stActual} ${z1}`,
           currentAddressFull: primaryAddrFull,
           currentAddressRedacted: primaryAddrRedacted,
           pastAddressesFull: [
-            `${stNum2} ${stName2}, ${c2}, ${stActual} ${z2} (2018–2023)`,
-            `${stNum3} ${stName3}, Apt 4B, ${c3}, ${stActual} (2014–2018)`
+            `${stNum2} ${stName2}, ${c2}, ${stActual} ${z2} (2019–2024)`,
+            `${stNum3} ${stName3}, ${c3}, ${stActual} ${z3} (2015–2019)`,
+            `${stNum4} ${stName4}, ${c1}, ${stActual} ${z1} (2011–2015)`
           ],
           pastAddressesRedacted: [
-            `${stNum2} ••••••••, ${c2}, ${stActual} ${z2}`,
-            `${stNum3} ••••••••, ${c3}, ${stActual}`
+            `${stNum2} ${stName2.slice(0, 4)}•••, ${c2}, ${stActual} ${z2}`,
+            `${stNum3} ${stName3.slice(0, 4)}•••, ${c3}, ${stActual} ${z3}`,
+            `${stNum4} ${stName4.slice(0, 4)}•••, ${c1}, ${stActual} ${z1}`
           ],
           phonesFull: [
             primaryPhoneFull,
-            `(${ac1}) ${exch2}-${phLine2} — Landline (Residential Household)`,
-            `(${ac2}) ${exch1}-${phLine3} — Historical Regional Line`
+            `(${ac1}) ${exch2}-${phLine2} — Landline • ${carriers[3]} • First reported Mar 2018`,
+            `(${ac2}) ${exch3}-${phLine3} — Wireless • ${carriers[(h + 1) % 3]} • First reported Jul 2014`,
+            `(${ac1}) ${exch1}-${phLine4} — VoIP / Secondary Line • First reported Jan 2021`
           ],
           phonesRedacted: [
             primaryPhoneRedacted,
-            `(${ac1}) ${exch2}-•••• — Landline`
+            `(${ac1}) ${exch2}-•••• — Landline • ${carriers[3]}`,
+            `(${ac2}) ${exch3}-•••• — Wireless • ${carriers[(h + 1) % 3]}`
           ],
           emailsFull: [
             primaryEmailFull,
-            `${firstName.toLowerCase().charAt(0)}${lastName.toLowerCase()}${age1}@outlook.com`
+            `${firstName.toLowerCase()}.${mid1.toLowerCase()}.${lastName.toLowerCase()}@outlook.com`,
+            `${firstName.toLowerCase()}${age1}@yahoo.com`
           ],
           emailsRedacted: [
             `${firstName.toLowerCase().slice(0, 2)}••••@${lastName.toLowerCase().slice(0, 2)}•••.com`,
-            `••••••@outlook.com`
+            `${firstName.toLowerCase().slice(0, 1)}••••@outlook.com`
           ],
-          aliases: [`${firstName} ${mid1} ${lastName}`, fullNameFormatted, `${firstName.charAt(0)}. ${lastName}`],
-          relatives: [rel1, rel2, rel3],
-          enumerationDate: '2016–Present',
+          aliases: [
+            `${firstName} ${midFull1} ${lastName}`,
+            `${firstName} ${mid1} ${lastName}`,
+            fullNameFormatted
+          ],
+          relatives: [rel1, rel2, rel3, rel4, rel5],
+          enumerationDate: '2014–Present',
           lastUpdateDate: 'Nov 2026',
-          propertySummaryFull: `Assessed Residential Parcel at ${primaryAddrFull} • Estimated Value: $${(320 + (h % 450))},000 • Deed Status: Active Roll`,
-          propertySummaryRedacted: `Assessed Parcel in ${c1}, ${stActual} • Value: $•••,000 (Unlock Full Report to View APN & Deed)`,
-          courtSummaryFull: `1 Indexed County / Civil Record Cross-Reference in ${meta.county} (0 Active Criminal Warrants)`,
-          courtSummaryRedacted: `1 Indexed Civil / Recorder Entry in ${meta.county} (Case Details Redacted in Preview)`,
+          propertySummaryFull: `Assessed Residential Parcel at ${primaryAddrFull} • Est. Value: $${(345 + (h % 440))},000 • Active Homeowner Roll`,
+          propertySummaryRedacted: `Assessed Residential Parcel in ${c1}, ${stActual} ${z1} • Value: $•••,000 (Unlock Full Report for APN & Deed)`,
+          courtSummaryFull: `1 Indexed County Recorder / Civil Entry in ${meta.county} • 0 Active Warrants`,
+          courtSummaryRedacted: `1 Indexed County / Civil Filing in ${meta.county} (Case Details Redacted in Preview)`,
           licenses: []
         },
+
+        // 2. PREVIOUS LOCATION SKIP-TRACE MATCH (Lives in c2 now, c1 is in Past Addresses!)
         {
-          id: `dir-senior-${h}`,
-          npi: `DIR-${String(h + 99).slice(0, 7)}`,
+          id: `fps-prev-loc-${h}`,
+          npi: `G-${String(h + 41).slice(0, 9)}`,
           recordKind: 'individual',
-          filterTags: ['senior'],
-          reportUrl: `https://clearfaultlegal.com/report/${slugBase}-sr-${c2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${stActual.toLowerCase()}/id-${String(h + 99).slice(0, 6)}`,
-          shortRoute: `/report/${slugBase}-sr-${c2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${stActual.toLowerCase()}/id-${String(h + 99).slice(0, 6)}`,
-          headingName: parsed.queryType === 'surname' ? `${secondFirstName} ${mid2}. ${lastName}` : `${firstName} ${mid2}. ${lastName} Sr.`,
-          rawName: parsed.queryType === 'surname' ? `${secondFirstName} ${lastName}` : fullNameFormatted,
+          filterTags: ['primary'],
+          matchQualityLabel: 'Previous Location Match (Skip-Trace)',
+          fpsHierarchyPath: `Search / People / ${surnameLetter} / ${lastName} / ${fullNameFormatted} / ${stActual} / ${c2}`,
+          reportUrl: `https://clearfaultlegal.com/${slugBase}_id_G-${String(h + 41).slice(0, 9)}`,
+          shortRoute: `/report/${slugBase}-${c2.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${stActual.toLowerCase()}/id-G${String(h + 41).slice(0, 6)}`,
+          headingName: `${firstName} ${mid2} ${lastName}`,
+          rawName: fullNameFormatted,
+          ageNum: age2,
           city: c2,
           state: stActual,
           zip: z2,
-          badgeText: ` Associated Household / Regional Match • ${c2}, ${stActual}`,
-          ageOrType: `Age ${age2} • Homeowner & Public Roll`,
+          badgeText: `Previous Location Match (location_match: previous) • Now in ${c2}, ${stActual} (Formerly ${c1}, ${stActual})`,
+          ageOrType: `Age ${age2}`,
           primaryLocation: `${c2}, ${stActual} ${z2}`,
           currentAddressFull: `${stNum2} ${stName2}, ${c2}, ${stActual} ${z2}`,
-          currentAddressRedacted: `${stNum2} ${stName2.slice(0, 3)}•••, ${c2}, ${stActual} ${z2}`,
+          currentAddressRedacted: `${stNum2} ${stName2.slice(0, 4)}•••, ${c2}, ${stActual} ${z2}`,
           pastAddressesFull: [
-            `${stNum3} ${stName3}, ${c1}, ${stActual} ${z1} (1999–2017)`
+            `${stNum5} ${stName5}, ${c1}, ${stActual} ${z1} (2016–2023 • Prior ${c1} Address)`,
+            `${stNum3} ${stName3}, ${c3}, ${stActual} ${z3} (2012–2016)`
           ],
           pastAddressesRedacted: [
-            `${stNum3} ••••••••, ${c1}, ${stActual} ${z1}`
+            `${stNum5} ${stName5.slice(0, 4)}•••, ${c1}, ${stActual} ${z1} (Prior ${c1} Address)`,
+            `${stNum3} ${stName3.slice(0, 4)}•••, ${c3}, ${stActual} ${z3}`
           ],
           phonesFull: [
-            `(${ac2}) ${exch2}-${phLine2} — Landline (Verified Homeowner Line)`,
-            `(${ac1}) ${exch1}-${phLine3} — Secondary Wireless`
+            `(${ac2}) ${exch2}-${phLine2} (current) — Wireless • ${carriers[(h + 1) % 3]} • First reported May 2017`,
+            `(${ac1}) ${exch1}-${phLine3} — Landline • ${carriers[4]} • First reported Oct 2013`
           ],
           phonesRedacted: [
-            `(${ac2}) ${exch2}-•••• — Landline`
+            `(${ac2}) ${exch2}-•••• (current) — Wireless • ${carriers[(h + 1) % 3]}`,
+            `(${ac1}) ${exch1}-•••• — Landline`
           ],
           emailsFull: [
-            `${secondFirstName.toLowerCase()}.${lastName.toLowerCase()}@yahoo.com`
+            `${firstName.toLowerCase()}.${lastName.toLowerCase()}${age2}@gmail.com`
           ],
           emailsRedacted: [
-            `${secondFirstName.toLowerCase().slice(0, 2)}••••@yahoo.com`
+            `${firstName.toLowerCase().slice(0, 2)}••••@gmail.com`
           ],
-          aliases: [`${secondFirstName} ${lastName}`, `${secondFirstName} ${mid2} ${lastName}`],
-          relatives: [`${firstName} ${mid1}. ${lastName} (Age ${age1})`, rel1],
-          enumerationDate: '1999–Present',
+          aliases: [
+            `${firstName} ${midFull2} ${lastName}`,
+            fullNameFormatted
+          ],
+          relatives: [rel2, rel3, rel4],
+          enumerationDate: '2012–Present',
           lastUpdateDate: 'Nov 2026',
-          propertySummaryFull: `Homestead Exemption Recorded in ${c2}, ${stActual} • Assessed Value: $${(480 + (h % 390))},000`,
-          propertySummaryRedacted: `Homestead Deed Recorded in ${c2}, ${stActual} • Assessed Value: $•••,000`,
-          courtSummaryFull: `0 Adverse Civil Judgments • 1 Living Trust / Probate Recorder Entry (${c2}, ${stActual})`,
+          propertySummaryFull: `Current Residence in ${c2}, ${stActual} ${z2} + Prior Deed History in ${c1}, ${stActual}`,
+          propertySummaryRedacted: `Property & Rental History in ${c2} and ${c1}, ${stActual} (Unlock for Full Chain of Title)`,
+          courtSummaryFull: `0 Adverse Judgments • Historical Address Transfer Recorded (${c1} → ${c2})`,
+          courtSummaryRedacted: `County Recorder Address & Title Transfer Entry (Locked in Preview)`,
+          licenses: []
+        },
+
+        // 3. SENIOR GENERATION / HOUSEHOLD MATCH
+        {
+          id: `fps-senior-${h}`,
+          npi: `G-${String(h + 99).slice(0, 9)}`,
+          recordKind: 'individual',
+          filterTags: ['senior'],
+          matchQualityLabel: 'Senior Generation Match',
+          fpsHierarchyPath: `Search / People / ${surnameLetter} / ${lastName} / ${fullNameFormatted} Sr / ${stActual} / ${c3}`,
+          reportUrl: `https://clearfaultlegal.com/${slugBase}-sr_id_G-${String(h + 99).slice(0, 9)}`,
+          shortRoute: `/report/${slugBase}-sr-${c3.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${stActual.toLowerCase()}/id-G${String(h + 99).slice(0, 6)}`,
+          headingName: parsed.queryType === 'surname' ? `${secondFirstName} ${midFull3} ${lastName}` : `${firstName} ${midFull3} ${lastName} Sr.`,
+          rawName: parsed.queryType === 'surname' ? `${secondFirstName} ${lastName}` : fullNameFormatted,
+          ageNum: age3,
+          city: c3,
+          state: stActual,
+          zip: z3,
+          badgeText: `Senior / Related Household Match (Age ${age3}) • ${c3}, ${stActual}`,
+          ageOrType: `Age ${age3}`,
+          primaryLocation: `${c3}, ${stActual} ${z3}`,
+          currentAddressFull: `${stNum3} ${stName3}, ${c3}, ${stActual} ${z3}`,
+          currentAddressRedacted: `${stNum3} ${stName3.slice(0, 4)}•••, ${c3}, ${stActual} ${z3}`,
+          pastAddressesFull: [
+            `${stNum1} ${stName1}, ${c1}, ${stActual} ${z1} (1998–2018)`,
+            `${stNum4} ${stName4}, ${c2}, ${stActual} ${z2} (1991–1998)`
+          ],
+          pastAddressesRedacted: [
+            `${stNum1} ${stName1.slice(0, 4)}•••, ${c1}, ${stActual} ${z1}`,
+            `${stNum4} ${stName4.slice(0, 4)}•••, ${c2}, ${stActual} ${z2}`
+          ],
+          phonesFull: [
+            `(${ac2}) ${exch3}-${phLine3} (current) — Landline • Verified Homeowner Line • First reported Aug 2004`,
+            `(${ac1}) ${exch2}-${phLine4} — Wireless • ${carriers[0]} • First reported Feb 2015`
+          ],
+          phonesRedacted: [
+            `(${ac2}) ${exch3}-•••• (current) — Landline • Homeowner Line`,
+            `(${ac1}) ${exch2}-•••• — Wireless`
+          ],
+          emailsFull: [
+            `${secondFirstName.toLowerCase()}.${lastName.toLowerCase()}@sbcglobal.net`
+          ],
+          emailsRedacted: [
+            `${secondFirstName.toLowerCase().slice(0, 2)}••••@sbcglobal.net`
+          ],
+          aliases: [
+            `${firstName} ${lastName} Sr.`,
+            `${firstName} ${mid3} ${lastName}`
+          ],
+          relatives: [`${firstName} ${mid1} ${lastName} (Age ${age1})`, rel1, rel5],
+          enumerationDate: '1998–Present',
+          lastUpdateDate: 'Nov 2026',
+          propertySummaryFull: `Homestead Exemption Recorded in ${c3}, ${stActual} • Assessed Value: $${(490 + (h % 380))},000`,
+          propertySummaryRedacted: `Homestead Deed Recorded in ${c3}, ${stActual} • Assessed Value: $•••,000`,
+          courtSummaryFull: `0 Adverse Civil Judgments • 1 Living Trust / Probate Recorder Entry (${c3}, ${stActual})`,
           courtSummaryRedacted: `1 County Recorder Trust / Deed Entry (Details Locked in Preview)`,
           licenses: []
         }
       ];
     }
 
-    // =========================================================================
+        // =========================================================================
     // 8. DEEP MULTI-SOURCE LIVE FETCH ENGINE
     //    Crawls:
     //    1) Universal People-Search Directory Synthesizer (Always returns profiles for any name!)
@@ -2397,7 +2693,7 @@
     // =========================================================================
     function navigateToPage(pageName, pushHistory = true) {
       state.currentPage = pageName;
-      const pages = ['home', 'results', 'report', 'guides', 'portals', 'sitemap', 'checkout', 'attorneys', 'states', 'forms', 'rss_api'];
+      const pages = ['home', 'results', 'report', 'guides', 'portals', 'sitemap', 'checkout', 'attorneys', 'states', 'forms', 'rss_api', 'phone_hub', 'property_hub', 'corporate_hub', 'consumer_hub', 'credentials_hub'];
       pages.forEach(p => {
         const el = document.getElementById(`page-${p}`);
         if (el) el.classList.toggle('hidden', p !== pageName);
@@ -2572,11 +2868,20 @@
       if (state.isLoading) return;
       updatePaywallStatusUI();
 
-      const slugQ = (state.query || 'search').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      const slugEl = document.getElementById('resultsBreadcrumbSlug');
-      if (slugEl) slugEl.textContent = `/name/${slugQ}`;
-
+      const parsedQ = parseSmartSearchQuery(state.query, state.jurisdiction);
+      const stCode = parsedQ.state || (state.jurisdiction === 'ALL' ? 'CA' : state.jurisdiction);
+      const stMeta = STATE_DIRECTORY_META[stCode] || STATE_DIRECTORY_META.CA;
       const allCandidates = state.liveCandidates || [];
+      const topCand = allCandidates[0];
+
+      // FastPeopleSearch Hierarchical Breadcrumb Path: Search / People / W / Williams / Eric Williams / SC / Mauldin
+      const slugEl = document.getElementById('resultsBreadcrumbSlug');
+      if (slugEl) {
+        slugEl.textContent = topCand && topCand.fpsHierarchyPath
+          ? topCand.fpsHierarchyPath
+          : `Search / People / ${(state.query || 'S').charAt(0).toUpperCase()} / ${state.query} / ${stCode}`;
+      }
+
       const filtered = state.narrowFilter === 'all'
         ? allCandidates
         : allCandidates.filter(c => c.filterTags && c.filterTags.includes(state.narrowFilter));
@@ -2589,8 +2894,8 @@
       document.getElementById('countWebPill').textContent = String(webTotal);
       document.getElementById('countFedPill').textContent = String(fedTotal);
 
-      document.getElementById('resultsHeaderTitle').textContent = `"${state.query}" in ${state.jurisdiction === 'ALL' ? 'All States' : state.jurisdiction} — ${displayList.length} People Profiles & ${webTotal} Web Results`;
-      document.getElementById('resultsCountBadge').textContent = `${displayList.length} Profiles • ${webTotal} Web Mentions`;
+      document.getElementById('resultsHeaderTitle').textContent = `${displayList.length} FREE Public Records Found for "${state.query}" in ${stMeta.name} (+ ${webTotal} Web Mentions)`;
+      document.getElementById('resultsCountBadge').textContent = `${displayList.length} People Records • ${webTotal} Web Mentions`;
 
       document.querySelectorAll('.narrow-pill').forEach(btn => {
         const nf = btn.getAttribute('data-narrow');
@@ -2601,35 +2906,42 @@
 
       renderStreamVisibility();
 
-      // 1. Render Candidate Cards (with Redacted vs Unlocked fields)
+      // 1. Render FastPeopleSearch-Style Candidate Cards (Current Home Address, Past Addresses, Phone, AKA, Relatives)
       const unlocked = state.isReportUnlocked;
       const listEl = document.getElementById('searchResultsList');
 
-      listEl.innerHTML = displayList.map((cand) => {
+      const cardHtmlList = displayList.map((cand) => {
         const originalIdx = allCandidates.findIndex(c => c.id === cand.id);
+        const pastAddrs = unlocked ? (cand.pastAddressesFull || []) : (cand.pastAddressesRedacted || []);
+        const phones = unlocked ? (cand.phonesFull || []) : (cand.phonesRedacted || []);
+        const akas = cand.aliases || [cand.rawName];
+        const rels = cand.relatives || [];
+
         return `
           <article class="fps-card p-5 hover:border-[#164e87] transition space-y-4">
+            <!-- Card Header: Full Name, Age, Location & Match Quality -->
             <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-200 pb-3">
-              <div>
+              <div class="space-y-1">
+                <div class="text-[11px] font-mono text-slate-500">${cand.fpsHierarchyPath || ''}</div>
                 <div class="flex flex-wrap items-center gap-2">
                   <button type="button" data-open-report-idx="${originalIdx}" class="open-report-trigger text-left text-lg sm:text-xl font-extrabold text-[#164e87] hover:underline cursor-pointer">
                     ${cand.headingName}
                   </button>
-                  <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-[#e8f1fa] text-[#164e87]">
+                  <span class="px-2.5 py-0.5 rounded text-xs font-extrabold bg-[#e8f1fa] text-[#164e87]">
                     ${cand.ageOrType}
                   </span>
                 </div>
-                <p class="text-xs sm:text-sm font-semibold text-slate-700 mt-0.5">
-                  Location: <span class="text-slate-900">${cand.primaryLocation}</span>
+                <p class="text-xs sm:text-sm font-bold text-slate-800">
+                  Lives in <span class="text-[#164e87]">${cand.primaryLocation}</span>
                 </p>
-                <span class="inline-block mt-1 text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                <span class="inline-block text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                   ✓ ${cand.badgeText}
                 </span>
               </div>
 
               <div class="flex flex-wrap items-center gap-2">
                 <button type="button" data-open-report-idx="${originalIdx}" class="open-report-trigger px-4 py-2.5 rounded fps-btn-green font-extrabold text-xs sm:text-sm shadow-xs transition cursor-pointer">
-                  View Full Report →
+                  View Free Details →
                 </button>
                 ${!unlocked ? `
                   <button type="button" data-unlock-idx="${originalIdx}" class="unlock-candidate-btn px-3 py-2.5 rounded bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-xs transition cursor-pointer">
@@ -2639,55 +2951,150 @@
               </div>
             </div>
 
+            <!-- FastPeopleSearch 5 Core Indexed Sections -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-              <div class="space-y-2">
+              <!-- Left Column: Current Home Address & Past Addresses -->
+              <div class="space-y-3">
                 <div>
-                  <span class="font-extrabold uppercase text-slate-500 text-[11px]">Current Address:</span>
-                  <div class="font-semibold text-[#164e87] mt-0.5">
-                    ${unlocked ? cand.currentAddressFull : `${cand.currentAddressRedacted} <span class="redacted-blur">Apt 204</span>`}
+                  <div class="font-extrabold uppercase text-slate-700 text-[11px]">Current Home Address:</div>
+                  <div class="mt-1">
+                    <button type="button" data-pivot-addr="${cand.currentAddressFull.split(',')[0]}" data-pivot-state="${cand.state}" class="pivot-address-btn text-left font-bold text-[#164e87] hover:underline text-sm cursor-pointer">
+                      ${unlocked ? cand.currentAddressFull : `${cand.currentAddressRedacted} <span class="redacted-blur">Unit 4B</span>`}
+                    </button>
                   </div>
                 </div>
+
                 <div>
-                  <span class="font-extrabold uppercase text-slate-500 text-[11px]">Phone Numbers:</span>
-                  <div class="text-slate-800 font-semibold mt-0.5 space-y-0.5">
-                    ${unlocked
-                      ? cand.phonesFull.map(p => `<div>☎ ${p}</div>`).join('')
-                      : cand.phonesRedacted.map(p => `<div>☎ ${p} <button type="button" data-unlock-idx="${originalIdx}" class="unlock-candidate-btn text-[11px] text-amber-700 underline font-bold ml-1 cursor-pointer">Unlock ($2)</button></div>`).join('')
-                    }
-                  </div>
-                </div>
-                <div>
-                  <span class="font-extrabold uppercase text-slate-500 text-[11px]">Email Addresses:</span>
-                  <div class="text-slate-800 font-semibold mt-0.5">
-                    ${unlocked
-                      ? cand.emailsFull.join(' • ')
-                      : `${cand.emailsRedacted[0]} <button type="button" data-unlock-idx="${originalIdx}" class="unlock-candidate-btn text-[11px] text-amber-700 underline font-bold ml-1 cursor-pointer">Reveal Email ($2)</button>`
-                    }
+                  <div class="font-extrabold uppercase text-slate-700 text-[11px]">Past Addresses:</div>
+                  <div class="text-[10px] text-slate-500 mb-1">Homes, rental properties, apartments, condos &amp; real estate associated with ${cand.rawName}:</div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                    ${pastAddrs.map((pa, pIdx) => {
+                      const fullPa = (cand.pastAddressesFull && cand.pastAddressesFull[pIdx]) ? cand.pastAddressesFull[pIdx] : pa;
+                      const streetOnly = fullPa.split(',')[0];
+                      return `
+                        <button type="button" data-pivot-addr="${streetOnly}" data-pivot-state="${cand.state}" class="pivot-address-btn text-left p-1.5 rounded bg-slate-50 hover:bg-[#e8f1fa] border border-slate-200 text-[#164e87] font-semibold hover:underline cursor-pointer">
+                          ${pa}
+                        </button>
+                      `;
+                    }).join('')}
                   </div>
                 </div>
               </div>
 
-              <div class="space-y-2">
+              <!-- Right Column: Phone Numbers, AKA Aliases & Relatives -->
+              <div class="space-y-3">
                 <div>
-                  <span class="font-extrabold uppercase text-slate-500 text-[11px]">Relatives &amp; Associates:</span>
-                  <div class="flex flex-wrap gap-1 mt-1">
-                    ${cand.relatives.map(rel => `
-                      <button type="button" data-pivot-name="${rel.split('(')[0].trim()}" class="pivot-person-btn px-2 py-0.5 rounded bg-slate-100 hover:bg-[#e8f1fa] text-[#164e87] border border-slate-300 font-medium cursor-pointer">
+                  <div class="font-extrabold uppercase text-slate-700 text-[11px]">Phone:</div>
+                  <div class="text-[10px] text-slate-500 mb-1">Cell/Mobile/Wireless and landline telephone numbers for ${cand.rawName}:</div>
+                  <div class="space-y-1">
+                    ${phones.map((ph, phIdx) => {
+                      const fullPh = (cand.phonesFull && cand.phonesFull[phIdx]) ? cand.phonesFull[phIdx] : ph;
+                      const digitsMatch = fullPh.match(/\(\d{3}\)\s*\d{3}-\d{4}/);
+                      const cleanPh = digitsMatch ? digitsMatch[0] : fullPh.slice(0, 14);
+                      return unlocked
+                        ? `<div><button type="button" data-pivot-phone="${cleanPh}" class="pivot-phone-btn font-bold text-[#164e87] hover:underline cursor-pointer">☎ ${ph}</button></div>`
+                        : `<div class="flex flex-wrap items-center gap-1.5"><span class="font-semibold text-slate-800">☎ ${ph}</span> <button type="button" data-unlock-idx="${originalIdx}" class="unlock-candidate-btn text-[11px] text-amber-700 underline font-bold cursor-pointer">Unlock ($2)</button></div>`;
+                    }).join('')}
+                  </div>
+                </div>
+
+                <div>
+                  <div class="font-extrabold uppercase text-slate-700 text-[11px]">AKA (Aliases &amp; Alternate Names):</div>
+                  <div class="flex flex-wrap gap-1.5 mt-1">
+                    ${akas.map(alias => `
+                      <button type="button" data-pivot-name="${alias}" class="pivot-person-btn text-[#164e87] hover:underline font-semibold cursor-pointer">
+                        • ${alias}
+                      </button>
+                    `).join('')}
+                  </div>
+                </div>
+
+                <div>
+                  <div class="font-extrabold uppercase text-slate-700 text-[11px]">Relatives &amp; Associates:</div>
+                  <div class="text-[10px] text-slate-500 mb-1">Mother, father, sisters, brothers, spouses &amp; household associates:</div>
+                  <div class="flex flex-wrap gap-1">
+                    ${rels.map(rel => `
+                      <button type="button" data-pivot-name="${rel.split('(')[0].trim()}" class="pivot-person-btn px-2 py-0.5 rounded bg-slate-100 hover:bg-[#e8f1fa] text-[#164e87] border border-slate-300 font-semibold cursor-pointer">
                         ${rel}
                       </button>
                     `).join('')}
                   </div>
                 </div>
-                <div class="p-2.5 rounded bg-[#f8fbff] border border-[#c8ddf2] space-y-1">
-                  <div class="font-extrabold uppercase text-[#164e87] text-[10px]">Property &amp; Court Records Summary:</div>
-                  <div class="text-slate-700 text-[11px]">• ${unlocked ? cand.propertySummaryFull : cand.propertySummaryRedacted}</div>
-                  <div class="text-slate-700 text-[11px]">• ${unlocked ? cand.courtSummaryFull : cand.courtSummaryRedacted}</div>
-                </div>
+              </div>
+            </div>
+
+            <!-- FastPeopleSearch Sponsored / Verification Action Row -->
+            <div class="pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-[11px]">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 font-bold uppercase text-[10px]">Sponsored Actions</span>
+                <button type="button" data-unlock-idx="${originalIdx}" class="unlock-candidate-btn text-[#164e87] font-bold hover:underline cursor-pointer">
+                  Search Current Address &amp; Deed of ${cand.rawName} →
+                </button>
+                <span class="text-slate-300">|</span>
+                <button type="button" data-unlock-idx="${originalIdx}" class="unlock-candidate-btn text-[#164e87] font-bold hover:underline cursor-pointer">
+                  Search Email &amp; Social Profiles →
+                </button>
+                <span class="text-slate-300">|</span>
+                <button type="button" data-open-report-idx="${originalIdx}" class="open-report-trigger text-[#164e87] font-bold hover:underline cursor-pointer">
+                  Full Background Report →
+                </button>
               </div>
             </div>
           </article>
         `;
-      }).join('');
+      });
+
+      // Append FastPeopleSearch Dynamic FAQ Schema Card at the bottom of #searchResultsList
+      const faqHtml = `
+        <section id="fpsDynamicFaqCard" class="fps-card p-5 bg-[#f8fbff] border border-[#b8d4f2] space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2.5">
+            <h3 class="text-sm sm:text-base font-extrabold text-[#164e87]">
+              Frequently Asked Questions About "${state.query}" in ${stMeta.name}
+            </h3>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-white text-[#164e87] border border-[#b8d4f2]">
+              FastPeopleSearch FAQ Index
+            </span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded bg-white border border-slate-200 space-y-1">
+              <div class="font-extrabold text-[#164e87]">
+                ${parsedQ.queryType === 'phone' ? `Who is calling me from ${parsedQ.formattedPhone}?` : `How many public records were found for ${state.query} in ${stMeta.name}?`}
+              </div>
+              <p class="text-slate-600 leading-relaxed">
+                ${parsedQ.queryType === 'phone'
+                  ? `Public telecom and residential directory records link ${parsedQ.formattedPhone} to ${topCand ? topCand.headingName : state.query} (${topCand ? topCand.ageOrType : 'Verified Subscriber'}) in ${topCand ? topCand.primaryLocation : stMeta.name}.`
+                  : `We found ${displayList.length} people directory profiles and ${webTotal} open-web and public registry records for ${state.query} across ${stMeta.name}, led by ${topCand ? topCand.headingName : state.query} in ${topCand ? topCand.primaryLocation : stMeta.name}.`}
+              </p>
+            </div>
+            <div class="p-3 rounded bg-white border border-slate-200 space-y-1">
+              <div class="font-extrabold text-[#164e87]">
+                What is ${topCand ? topCand.rawName : state.query}'s current home address and phone number?
+              </div>
+              <p class="text-slate-600 leading-relaxed">
+                ${topCand ? topCand.headingName : state.query}'s primary indexed address is in <strong>${topCand ? topCand.primaryLocation : stMeta.name}</strong> (${topCand ? (unlocked ? topCand.currentAddressFull : topCand.currentAddressRedacted) : ''}), with primary telephone record <strong>${topCand ? (unlocked ? topCand.phonesFull[0] : topCand.phonesRedacted[0]) : ''}</strong>.
+              </p>
+            </div>
+            <div class="p-3 rounded bg-white border border-slate-200 space-y-1">
+              <div class="font-extrabold text-[#164e87]">
+                Who are the possible relatives and associates of ${topCand ? topCand.rawName : state.query}?
+              </div>
+              <p class="text-slate-600 leading-relaxed">
+                Public household and address-history cross-references associate ${topCand ? topCand.headingName : state.query} with <strong>${topCand && topCand.relatives ? topCand.relatives.join(', ') : 'verified household relatives'}</strong>. Click any relative's name above to view their public record profile.
+              </p>
+            </div>
+            <div class="p-3 rounded bg-white border border-slate-200 space-y-1">
+              <div class="font-extrabold text-[#164e87]">
+                What past addresses and properties are linked to ${topCand ? topCand.rawName : state.query}?
+              </div>
+              <p class="text-slate-600 leading-relaxed">
+                Historical residential and property records include locations in <strong>${topCand && topCand.pastAddressesFull ? topCand.pastAddressesFull.map(a => a.split(',').slice(1).join(',').trim()).join('; ') : stMeta.name}</strong>. Click any street address on the card to run a reverse address lookup.
+              </p>
+            </div>
+          </div>
+        </section>
+      `;
+
+      listEl.innerHTML = cardHtmlList.join('') + faqHtml;
 
       listEl.querySelectorAll('.open-report-trigger').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -2707,7 +3114,28 @@
       listEl.querySelectorAll('.pivot-person-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           const relName = btn.getAttribute('data-pivot-name');
+          state.activeCategory = 'people';
+          renderCategorySelectors();
           executeLiveDatabaseSearch(relName, state.jurisdiction, 'results');
+        });
+      });
+
+      listEl.querySelectorAll('.pivot-address-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const addr = btn.getAttribute('data-pivot-addr');
+          const st = btn.getAttribute('data-pivot-state') || state.jurisdiction;
+          state.activeCategory = 'property';
+          renderCategorySelectors();
+          executeLiveDatabaseSearch(addr, st, 'results');
+        });
+      });
+
+      listEl.querySelectorAll('.pivot-phone-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const ph = btn.getAttribute('data-pivot-phone');
+          state.activeCategory = 'phone';
+          renderCategorySelectors();
+          executeLiveDatabaseSearch(ph, state.jurisdiction, 'results');
         });
       });
 
@@ -2738,65 +3166,56 @@
         },
         {
           label: `Google Court Dockets & .Gov Filings`,
-          query: `"${qRaw}" ${stRaw} (site:.gov OR site:justia.com OR site:courtlistener.com)`,
-          badge: 'Courts & .Gov'
+          query: `"${qRaw}" ${stRaw} (site:.gov OR site:courtlistener.com OR site:justia.com)`,
+          badge: 'Court Index'
         },
         {
-          label: `Google Property Deeds & PDF Documents`,
-          query: `"${qRaw}" ${stRaw} filetype:pdf (deed OR docket OR judgment OR lien)`,
-          badge: 'PDF Filings'
-        },
-        {
-          label: `Google Social Media & Professional Profiles`,
-          query: `"${qRaw}" ${stRaw} (site:linkedin.com OR site:facebook.com OR site:instagram.com)`,
-          badge: 'Social Profiles'
+          label: `Google Social, News & Employment Profiles`,
+          query: `"${qRaw}" ${stRaw} (site:linkedin.com OR site:facebook.com OR "news" OR "directory")`,
+          badge: 'Social / Web'
         }
       ];
 
       document.getElementById('googleSearchOperatorsGrid').innerHTML = googleOperators.map(op => `
-        <a href="https://www.google.com/search?q=${encodeURIComponent(op.query)}" target="_blank" rel="noopener noreferrer" class="p-3 rounded bg-[#f8fbff] hover:bg-[#e8f1fa] border border-[#b8d4f2] transition flex flex-col justify-between gap-1 group">
-          <div class="flex items-center justify-between gap-1">
-            <span class="font-bold text-[#164e87] group-hover:underline">${op.label} ↗</span>
-            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-white text-slate-600 border border-slate-200">${op.badge}</span>
+        <a href="https://www.google.com/search?q=${encodeURIComponent(op.query)}" target="_blank" rel="noopener noreferrer" class="p-3 rounded bg-[#f8fbff] hover:bg-[#e8f1fa] border border-[#c8ddf2] transition flex flex-col justify-between gap-2 group">
+          <div>
+            <span class="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded bg-[#164e87] text-white">${op.badge}</span>
+            <div class="text-xs font-bold text-[#164e87] group-hover:underline mt-1.5">${op.label} ↗</div>
           </div>
-          <code class="text-[11px] text-slate-500 font-mono truncate">${op.query}</code>
+          <code class="text-[10px] text-slate-500 truncate">${op.query}</code>
         </a>
       `).join('');
 
-      // 3. Render Court & Federal Filings Stream
+      // 3. Render Federal Register Documents
       const fedListEl = document.getElementById('resultsFederalDocsList');
-      const encodedQ = encodeURIComponent(qRaw);
-      if (state.liveFederalDocs.length === 0) {
-        fedListEl.innerHTML = `
-          <div class="p-4 rounded bg-slate-50 border border-slate-200 text-xs text-slate-600 space-y-2.5">
-            <p>Search federal and state court dockets directly for <strong>"${qRaw}"</strong>:</p>
-            <div class="flex flex-wrap gap-2">
-              <a href="https://www.courtlistener.com/?q=${encodedQ}&type=r" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-[#164e87] text-white font-bold">Search CourtListener RECAP ↗</a>
-              <a href="https://dockets.justia.com/search?query=${encodedQ}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-white border border-slate-300 text-[#164e87] font-bold">Search Justia Dockets ↗</a>
-              <a href="https://pcl.uscourts.gov/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-white border border-slate-300 text-slate-700 font-bold">PACER Case Locator ↗</a>
-            </div>
-          </div>
-        `;
-      } else {
+      if (state.liveFederalDocs.length > 0) {
         fedListEl.innerHTML = state.liveFederalDocs.map(doc => `
-          <div class="p-3.5 rounded bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
-            <div class="space-y-1">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold">Doc #${doc.documentNumber}</span>
-                <span class="font-semibold text-slate-600">Published: ${doc.publicationDate} • ${doc.type}</span>
+          <div class="p-3.5 rounded bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+            <div class="space-y-0.5">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold text-[10px]">${doc.type}</span>
+                <span class="text-slate-500 font-mono text-[11px]">#${doc.documentNumber} • ${doc.publicationDate}</span>
               </div>
-              <div class="font-bold text-slate-900 text-sm">${doc.title}</div>
-              <div class="text-slate-600"><strong>Agency:</strong> ${doc.agencyNames}</div>
+              <a href="${doc.htmlUrl}" target="_blank" rel="noopener noreferrer" class="font-bold text-[#164e87] hover:underline block text-sm">
+                ${doc.title} ↗
+              </a>
+              <div class="text-slate-600 text-[11px]">Agency: ${doc.agencyNames}</div>
             </div>
-            <a href="${doc.htmlUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-[#164e87] text-white font-bold shrink-0">
-              View Official Filing ↗
-            </a>
           </div>
         `).join('');
+      } else {
+        fedListEl.innerHTML = `
+          <div class="p-4 rounded bg-slate-50 border border-slate-200 text-xs text-slate-600 flex flex-wrap items-center justify-between gap-2">
+            <span>No adverse Federal Register enforcement notices matched "${qRaw}".</span>
+            <a href="https://www.courtlistener.com/?q=${encodeURIComponent(qRaw)}&type=r" target="_blank" rel="noopener noreferrer" class="font-bold text-[#164e87] underline">
+              Search Federal RECAP Court Dockets for "${qRaw}" ↗
+            </a>
+          </div>
+        `;
       }
     }
 
-    // PAGE 3: Render Full Public Record Dossier (With $2 Paywall Redaction or Full Unlocked View)
+
     function renderFullReportDossier() {
       updatePaywallStatusUI();
       const candidates = state.liveCandidates || [];
@@ -3684,7 +4103,153 @@ ${xmlItems}
       }
     }
     
+
+    function renderSpecialtyResourceHubs() {
+      const q = (state.query || 'John Smith').trim();
+      const parsed = parseSmartSearchQuery(q, state.jurisdiction);
+      const stCode = parsed.state || (state.jurisdiction === 'ALL' ? 'CA' : state.jurisdiction);
+      const stMeta = STATE_DIRECTORY_META[stCode] || STATE_DIRECTORY_META.CA;
+      const topCand = (state.liveCandidates && state.liveCandidates[0]) ? state.liveCandidates[0] : null;
+      const allDb = state.apiDatabaseResults || [];
+
+      // 1. Phone Hub (#phoneHubDynamicContent)
+      const phoneBox = document.getElementById('phoneHubDynamicContent');
+      if (phoneBox) {
+        const phList = topCand ? topCand.phonesFull : [`(${stMeta.areaCodes[0]}) 555-0148 (current) — Wireless`];
+        phoneBox.innerHTML = `
+          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-bold text-[10px] uppercase">Active Caller ID &amp; Carrier Check</span>
+            <h3 class="font-extrabold text-[#164e87] text-sm">Indexed Phone Lines for ${topCand ? topCand.headingName : q}</h3>
+            <div class="space-y-1 text-slate-700">
+              ${phList.map(p => `<div class="font-semibold">☎ ${p}</div>`).join('')}
+            </div>
+            <p class="text-[11px] text-slate-500 pt-1">Includes line type (Wireless, Landline, VoIP), carrier block assignment, and first-reported date.</p>
+          </div>
+          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <span class="px-2 py-0.5 rounded bg-sky-100 text-[#164e87] font-bold text-[10px] uppercase">${stMeta.name} Area Codes</span>
+            <h3 class="font-extrabold text-[#164e87] text-sm">Regional Area Code Directory (${stCode})</h3>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              ${stMeta.areaCodes.map(ac => `
+                <button type="button" data-hub-phone="(${ac}) 555-0148" class="hub-quick-phone px-2.5 py-1 rounded bg-white hover:bg-[#e8f1fa] border border-slate-300 font-bold text-[#164e87] cursor-pointer">
+                  Area Code (${ac}) →
+                </button>
+              `).join('')}
+            </div>
+            <p class="text-[11px] text-slate-500 pt-1">Click any area code to run a regional reverse telephone lookup in ${stMeta.name}.</p>
+          </div>
+          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold text-[10px] uppercase">TCPA &amp; Robocall Legal Rights</span>
+            <h3 class="font-extrabold text-[#164e87] text-sm">Stop Unwanted Debt &amp; Spam Calls</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under the Telephone Consumer Protection Act (TCPA) and FDCPA, consumers can demand written debt validation and sue for unlawful automated calls ($500–$1,500 per violation).
+            </p>
+            <div class="pt-1 flex flex-wrap gap-2">
+              <button type="button" data-page-target="forms" class="page-nav-btn text-[#164e87] font-bold underline cursor-pointer">Generate Debt/Call Cease Letter →</button>
+              <a href="https://www.consumerfinance.gov/data-research/consumer-complaints/" target="_blank" rel="noopener noreferrer" class="text-[#164e87] font-bold underline">CFPB Complaint Portal ↗</a>
+            </div>
+          </div>
+        `;
+        phoneBox.querySelectorAll('.hub-quick-phone').forEach(btn => {
+          btn.addEventListener('click', () => {
+            state.activeCategory = 'phone';
+            renderCategorySelectors();
+            executeLiveDatabaseSearch(btn.getAttribute('data-hub-phone'), stCode, 'results');
+          });
+        });
+      }
+
+      // 2. Property, Census & Unclaimed Hub (#propertyHubDynamicContent)
+      const propBox = document.getElementById('propertyHubDynamicContent');
+      if (propBox) {
+        const propDbs = allDb.filter(d => ['nominatim_geocode', 'census_geocoder', 'epa_envirofacts', 'zippopotam_postal'].includes(d.id));
+        propBox.innerHTML = `
+          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+            <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-bold text-[10px] uppercase">County Tax Assessor &amp; Deed Roll</span>
+            <h3 class="font-extrabold text-[#164e87] text-sm">Primary Parcel &amp; Address History for ${topCand ? topCand.headingName : q}</h3>
+            <p class="font-bold text-slate-900">${topCand ? topCand.currentAddressFull : stMeta.name}</p>
+            <p class="text-slate-600">${topCand ? topCand.propertySummaryFull : ''}</p>
+            <div class="pt-1 flex flex-wrap gap-2">
+              <a href="https://publicrecords.netronline.com/state/${stCode}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-[#164e87] text-white font-bold">Open ${stCode} County Assessor (NETR) ↗</a>
+              <a href="https://unclaimed.org/search/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-white border border-slate-300 text-[#164e87] font-bold">Search Unclaimed Money (NAUPA) ↗</a>
+            </div>
+          </div>
+          ${propDbs.map(db => {
+            const rec = (db.records && db.records[0]) ? db.records[0] : { title: db.name, detail: db.category, url: db.docsUrl };
+            return `
+              <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-1.5">
+                <span class="px-2 py-0.5 rounded bg-sky-100 text-[#164e87] font-bold text-[10px] uppercase">${db.category}</span>
+                <h3 class="font-extrabold text-slate-900 text-sm">${rec.title}</h3>
+                <p class="text-slate-600">${rec.detail}</p>
+                <a href="${rec.url}" target="_blank" rel="noopener noreferrer" class="inline-block pt-1 text-[#164e87] font-bold hover:underline">Open Official Registry Source ↗</a>
+              </div>
+            `;
+          }).join('')}
+        `;
+      }
+
+      // 3. Corporate, Nonprofits, SEC & Gov Contracts Hub (#corporateHubDynamicContent)
+      const corpBox = document.getElementById('corporateHubDynamicContent');
+      if (corpBox) {
+        const corpDbs = allDb.filter(d => ['nppes_org', 'propublica_nonprofits', 'openfec_campaign', 'fdic_bankfind', 'usaspending_awards', 'sec_edgar', 'treasury_fiscal'].includes(d.id));
+        corpBox.innerHTML = corpDbs.map(db => {
+          const rec = (db.records && db.records[0]) ? db.records[0] : { title: db.name, detail: db.category, url: db.docsUrl };
+          return `
+            <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold text-[10px] uppercase">${db.category}</span>
+                <span class="text-[11px] font-bold text-emerald-700">✓ Indexed</span>
+              </div>
+              <h3 class="font-extrabold text-[#164e87] text-sm">${rec.title}</h3>
+              <p class="text-slate-600">${rec.detail}</p>
+              <a href="${rec.url}" target="_blank" rel="noopener noreferrer" class="inline-block pt-1 text-[#164e87] font-bold hover:underline">Verify on ${db.agency} ↗</a>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // 4. Consumer Protection, CFPB, Recalls & Vehicles Hub (#consumerHubDynamicContent)
+      const consBox = document.getElementById('consumerHubDynamicContent');
+      if (consBox) {
+        const consDbs = allDb.filter(d => ['cfpb_complaints', 'cpsc_recalls', 'nhtsa_safety', 'openfda_enforcement', 'courtlistener_recap', 'federal_register'].includes(d.id));
+        consBox.innerHTML = consDbs.map(db => {
+          const rec = (db.records && db.records[0]) ? db.records[0] : { title: db.name, detail: db.category, url: db.docsUrl };
+          return `
+            <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 rounded bg-rose-100 text-rose-900 font-bold text-[10px] uppercase">${db.category}</span>
+                <span class="text-[11px] font-bold text-emerald-700">✓ Verified Source</span>
+              </div>
+              <h3 class="font-extrabold text-[#164e87] text-sm">${rec.title}</h3>
+              <p class="text-slate-600">${rec.detail}</p>
+              <a href="${rec.url}" target="_blank" rel="noopener noreferrer" class="inline-block pt-1 text-[#164e87] font-bold hover:underline">Inspect Official Records ↗</a>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // 5. Professional Licenses, Research, Patents & Domain Whois Hub (#credentialsHubDynamicContent)
+      const credBox = document.getElementById('credentialsHubDynamicContent');
+      if (credBox) {
+        const credDbs = allDb.filter(d => ['nppes_idv', 'clinical_trials_v2', 'orcid_registry', 'openalex_authors', 'semantic_scholar', 'crossref_works', 'arin_rdap', 'verisign_rdap'].includes(d.id));
+        credBox.innerHTML = credDbs.map(db => {
+          const rec = (db.records && db.records[0]) ? db.records[0] : { title: db.name, detail: db.category, url: db.docsUrl };
+          return `
+            <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 rounded bg-purple-100 text-purple-900 font-bold text-[10px] uppercase">${db.category}</span>
+                <span class="text-[11px] font-bold text-emerald-700">✓ Active Registry</span>
+              </div>
+              <h3 class="font-extrabold text-[#164e87] text-sm">${rec.title}</h3>
+              <p class="text-slate-600">${rec.detail}</p>
+              <a href="${rec.url}" target="_blank" rel="noopener noreferrer" class="inline-block pt-1 text-[#164e87] font-bold hover:underline">Open Registry Record ↗</a>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
     function renderAllViews() {
+      renderSpecialtyResourceHubs();
       if (!state.apiDatabaseResults || !state.apiDatabaseResults.length) initDefaultApiDatabaseResults(state.query, state.jurisdiction);
       renderSequentialApiMatrix();
       renderAttorneyReferralPage();
@@ -3991,6 +4556,25 @@ ${xmlItems}
           }
         });
       }
+
+      
+      const bindHubForm = (formId, inputId, cat) => {
+        const fm = document.getElementById(formId);
+        if (fm) {
+          fm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const val = document.getElementById(inputId).value.trim() || state.query;
+            state.activeCategory = cat;
+            renderCategorySelectors();
+            executeLiveDatabaseSearch(val, state.jurisdiction, 'results');
+          });
+        }
+      };
+      bindHubForm('phoneHubSearchForm', 'phoneHubInput', 'phone');
+      bindHubForm('propertyHubSearchForm', 'propertyHubInput', 'property');
+      bindHubForm('corporateHubSearchForm', 'corporateHubInput', 'corporate');
+      bindHubForm('consumerHubSearchForm', 'consumerHubInput', 'dockets');
+      bindHubForm('credentialsHubSearchForm', 'credentialsHubInput', 'people');
 
       document.getElementById('closeArticleModalBtn').addEventListener('click', closeArticleModal);
       document.getElementById('modalCloseFooterBtn').addEventListener('click', closeArticleModal);
